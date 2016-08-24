@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7930BB3A1D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB391D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift */; };
+		7930BB3C1D6C96BD00555A75 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB3B1D6C96BD00555A75 /* Devices.swift */; };
+		7930BB3E1D6C9A4400555A75 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB3D1D6C9A4400555A75 /* UIImageViewExtension.swift */; };
+		7930BB401D6CA20900555A75 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB3F1D6CA20900555A75 /* CommonUtils.swift */; };
 		7977F3691D6B34EF00E43C91 /* frame-markers-transparent.zip in Resources */ = {isa = PBXBuildFile; fileRef = 7977F3051D6B34EF00E43C91 /* frame-markers-transparent.zip */; };
 		7977F36A1D6B34EF00E43C91 /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7977F3631D6B34EF00E43C91 /* libVuforia.a */; };
 		7977F36B1D6B34EF00E43C91 /* license_3rdpartynotice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7977F3651D6B34EF00E43C91 /* license_3rdpartynotice.txt */; };
@@ -20,9 +24,17 @@
 		7980E11B1D6B39170030AA55 /* Tarmac.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1161D6B39170030AA55 /* Tarmac.xml */; };
 		7980E11D1D6B3A060030AA55 /* Plane.scn in Resources */ = {isa = PBXBuildFile; fileRef = 7980E11C1D6B3A060030AA55 /* Plane.scn */; };
 		7980E11F1D6B3A3A0030AA55 /* Transport Shuttle_dae.dae in Resources */ = {isa = PBXBuildFile; fileRef = 7980E11E1D6B3A3A0030AA55 /* Transport Shuttle_dae.dae */; };
+		7980E1211D6B48500030AA55 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1201D6B48500030AA55 /* TutorialViewController.swift */; };
+		7980E1231D6B5F060030AA55 /* CameraPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1221D6B5F060030AA55 /* CameraPermissionViewController.swift */; };
+		7980E1251D6B60A50030AA55 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1241D6B60A50030AA55 /* MainViewController.swift */; };
+		7980E1291D6B618F0030AA55 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1281D6B618F0030AA55 /* Constants.swift */; };
+		7980E12C1D6B62210030AA55 /* UIAnimationsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E12B1D6B62210030AA55 /* UIAnimationsViews.swift */; };
+		7980E12F1D6B65160030AA55 /* SwipeLeftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E12E1D6B65160030AA55 /* SwipeLeftSegue.swift */; };
+		7980E1311D6B6A900030AA55 /* CameraControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1301D6B6A900030AA55 /* CameraControlViewController.swift */; };
+		7980E1351D6B8EAD0030AA55 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1341D6B8EAD0030AA55 /* UIViewExtension.swift */; };
 		79C615A01D6A5D0D007B2D5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6159F1D6A5D0D007B2D5A /* AppDelegate.swift */; };
 		79C615A21D6A5D0D007B2D5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C615A11D6A5D0D007B2D5A /* ViewController.swift */; };
-		79C615A51D6A5D0D007B2D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C615A31D6A5D0D007B2D5A /* Main.storyboard */; };
+		79C615A51D6A5D0D007B2D5A /* Iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C615A31D6A5D0D007B2D5A /* Iphone.storyboard */; };
 		79C615A71D6A5D0D007B2D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C615A61D6A5D0D007B2D5A /* Assets.xcassets */; };
 		79C615AA1D6A5D0D007B2D5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C615A81D6A5D0D007B2D5A /* LaunchScreen.storyboard */; };
 		79C615BA1D6A73B9007B2D5A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C615B91D6A73B9007B2D5A /* CoreMotion.framework */; };
@@ -41,6 +53,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7930BB391D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamaraButtonsControlViewController.swift; sourceTree = "<group>"; };
+		7930BB3B1D6C96BD00555A75 /* Devices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		7930BB3D1D6C9A4400555A75 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		7930BB3F1D6CA20900555A75 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
 		7977F3051D6B34EF00E43C91 /* frame-markers-transparent.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "frame-markers-transparent.zip"; sourceTree = "<group>"; };
 		7977F3091D6B34EF00E43C91 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
 		7977F30A1D6B34EF00E43C91 /* Box3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box3D.h; sourceTree = "<group>"; };
@@ -142,10 +158,18 @@
 		7980E1161D6B39170030AA55 /* Tarmac.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tarmac.xml; sourceTree = "<group>"; };
 		7980E11C1D6B3A060030AA55 /* Plane.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Plane.scn; path = TuMundoUne/game.scnassets/Plane.scn; sourceTree = "<group>"; };
 		7980E11E1D6B3A3A0030AA55 /* Transport Shuttle_dae.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; name = "Transport Shuttle_dae.dae"; path = "TuMundoUne/game.scnassets/Transport Shuttle_dae.dae"; sourceTree = "<group>"; };
+		7980E1201D6B48500030AA55 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		7980E1221D6B5F060030AA55 /* CameraPermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPermissionViewController.swift; sourceTree = "<group>"; };
+		7980E1241D6B60A50030AA55 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7980E1281D6B618F0030AA55 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7980E12B1D6B62210030AA55 /* UIAnimationsViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimationsViews.swift; sourceTree = "<group>"; };
+		7980E12E1D6B65160030AA55 /* SwipeLeftSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeLeftSegue.swift; sourceTree = "<group>"; };
+		7980E1301D6B6A900030AA55 /* CameraControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraControlViewController.swift; sourceTree = "<group>"; };
+		7980E1341D6B8EAD0030AA55 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		79C6159C1D6A5D0D007B2D5A /* TuMundoUne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuMundoUne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C6159F1D6A5D0D007B2D5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C615A11D6A5D0D007B2D5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79C615A41D6A5D0D007B2D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79C615A41D6A5D0D007B2D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Iphone.storyboard; sourceTree = "<group>"; };
 		79C615A61D6A5D0D007B2D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79C615A91D6A5D0D007B2D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C615AB1D6A5D0D007B2D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -191,6 +215,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7930BB411D6CACAC00555A75 /* Scene Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7930BB421D6CACF600555A75 /* Scenes */,
+				7930BB431D6CACFE00555A75 /* 3D Models */,
+			);
+			name = "Scene Resources";
+			sourceTree = "<group>";
+		};
+		7930BB421D6CACF600555A75 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		7930BB431D6CACFE00555A75 /* 3D Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "3D Models";
+			sourceTree = "<group>";
+		};
 		7977F3031D6B34EF00E43C91 /* vuforia-sdk-ios-6-0-112 */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +422,58 @@
 			name = ImageTargets;
 			sourceTree = "<group>";
 		};
+		7980E1261D6B61560030AA55 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7980E1331D6B8E850030AA55 /* Extensions */,
+				7980E1271D6B61760030AA55 /* References */,
+				7980E12A1D6B61FE0030AA55 /* Animations */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		7980E1271D6B61760030AA55 /* References */ = {
+			isa = PBXGroup;
+			children = (
+				7980E1281D6B618F0030AA55 /* Constants.swift */,
+				7930BB3B1D6C96BD00555A75 /* Devices.swift */,
+				7930BB3F1D6CA20900555A75 /* CommonUtils.swift */,
+			);
+			name = References;
+			sourceTree = "<group>";
+		};
+		7980E12A1D6B61FE0030AA55 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				7980E12B1D6B62210030AA55 /* UIAnimationsViews.swift */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		7980E12D1D6B64FD0030AA55 /* StoryboardsSegue */ = {
+			isa = PBXGroup;
+			children = (
+				7980E12E1D6B65160030AA55 /* SwipeLeftSegue.swift */,
+			);
+			name = StoryboardsSegue;
+			sourceTree = "<group>";
+		};
+		7980E1321D6B6D930030AA55 /* Iphone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Iphone;
+			sourceTree = "<group>";
+		};
+		7980E1331D6B8E850030AA55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7980E1341D6B8EAD0030AA55 /* UIViewExtension.swift */,
+				7930BB3D1D6C9A4400555A75 /* UIImageViewExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		79C615931D6A5D0C007B2D5A = {
 			isa = PBXGroup;
 			children = (
@@ -396,8 +495,11 @@
 		79C6159E1D6A5D0D007B2D5A /* TuMundoUne */ = {
 			isa = PBXGroup;
 			children = (
+				7980E12D1D6B64FD0030AA55 /* StoryboardsSegue */,
 				79C615CA1D6A745C007B2D5A /* Storyboards */,
 				79C615CB1D6A746F007B2D5A /* ViewControllers */,
+				7930BB411D6CACAC00555A75 /* Scene Resources */,
+				7980E1261D6B61560030AA55 /* Utility */,
 				79C615A61D6A5D0D007B2D5A /* Assets.xcassets */,
 				7980E10E1D6B38A60030AA55 /* Game.scnassets */,
 				79C615AB1D6A5D0D007B2D5A /* Info.plist */,
@@ -432,7 +534,7 @@
 			isa = PBXGroup;
 			children = (
 				79C615A81D6A5D0D007B2D5A /* LaunchScreen.storyboard */,
-				79C615A31D6A5D0D007B2D5A /* Main.storyboard */,
+				79C615A31D6A5D0D007B2D5A /* Iphone.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -440,8 +542,14 @@
 		79C615CB1D6A746F007B2D5A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				79C6159F1D6A5D0D007B2D5A /* AppDelegate.swift */,
 				79C615A11D6A5D0D007B2D5A /* ViewController.swift */,
+				7980E1201D6B48500030AA55 /* TutorialViewController.swift */,
+				7980E1241D6B60A50030AA55 /* MainViewController.swift */,
+				7980E1221D6B5F060030AA55 /* CameraPermissionViewController.swift */,
+				7980E1301D6B6A900030AA55 /* CameraControlViewController.swift */,
+				7930BB391D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift */,
+				7980E1321D6B6D930030AA55 /* Iphone */,
+				79C6159F1D6A5D0D007B2D5A /* AppDelegate.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -531,7 +639,7 @@
 				7980E11B1D6B39170030AA55 /* Tarmac.xml in Resources */,
 				7980E1191D6B39170030AA55 /* StonesAndChips.xml in Resources */,
 				7977F36D1D6B34EF00E43C91 /* readme.txt in Resources */,
-				79C615A51D6A5D0D007B2D5A /* Main.storyboard in Resources */,
+				79C615A51D6A5D0D007B2D5A /* Iphone.storyboard in Resources */,
 				7977F36B1D6B34EF00E43C91 /* license_3rdpartynotice.txt in Resources */,
 				7980E11D1D6B3A060030AA55 /* Plane.scn in Resources */,
 				7980E11F1D6B3A3A0030AA55 /* Transport Shuttle_dae.dae in Resources */,
@@ -545,24 +653,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7980E1231D6B5F060030AA55 /* CameraPermissionViewController.swift in Sources */,
 				79C616501D6A7DAE007B2D5A /* VuforiaManager.mm in Sources */,
+				7930BB3E1D6C9A4400555A75 /* UIImageViewExtension.swift in Sources */,
+				7980E1211D6B48500030AA55 /* TutorialViewController.swift in Sources */,
+				7980E1311D6B6A900030AA55 /* CameraControlViewController.swift in Sources */,
+				7980E1351D6B8EAD0030AA55 /* UIViewExtension.swift in Sources */,
+				7980E12C1D6B62210030AA55 /* UIAnimationsViews.swift in Sources */,
 				79C616521D6A7DAE007B2D5A /* VuforiaShaderUtils.m in Sources */,
 				79C616511D6A7DAE007B2D5A /* VuforiaObjects.mm in Sources */,
+				7980E1291D6B618F0030AA55 /* Constants.swift in Sources */,
 				79C615A21D6A5D0D007B2D5A /* ViewController.swift in Sources */,
+				7980E1251D6B60A50030AA55 /* MainViewController.swift in Sources */,
+				7930BB3C1D6C96BD00555A75 /* Devices.swift in Sources */,
 				79C615A01D6A5D0D007B2D5A /* AppDelegate.swift in Sources */,
 				79C6164F1D6A7DAE007B2D5A /* VuforiaEAGLView.mm in Sources */,
+				7930BB3A1D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift in Sources */,
+				7930BB401D6CA20900555A75 /* CommonUtils.swift in Sources */,
+				7980E12F1D6B65160030AA55 /* SwipeLeftSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79C615A31D6A5D0D007B2D5A /* Main.storyboard */ = {
+		79C615A31D6A5D0D007B2D5A /* Iphone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				79C615A41D6A5D0D007B2D5A /* Base */,
 			);
-			name = Main.storyboard;
+			name = Iphone.storyboard;
 			sourceTree = "<group>";
 		};
 		79C615A81D6A5D0D007B2D5A /* LaunchScreen.storyboard */ = {

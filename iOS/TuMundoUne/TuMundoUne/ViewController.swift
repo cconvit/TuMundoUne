@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
+        vuforiaManager = nil
     }
     
     override func viewDidLoad() {
@@ -39,12 +40,13 @@ class ViewController: UIViewController {
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        
+      /*
         do {
             try vuforiaManager?.stop()
         }catch let error {
             print("\(error)")
         }
+     */
     }
 }
 
