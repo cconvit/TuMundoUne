@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792D3D9C1D748B0500F1D759 /* TestScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 792D3D9B1D748B0500F1D759 /* TestScene.scn */; };
 		7930BB3A1D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB391D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift */; };
 		7930BB3C1D6C96BD00555A75 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB3B1D6C96BD00555A75 /* Devices.swift */; };
 		7930BB3E1D6C9A4400555A75 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB3D1D6C9A4400555A75 /* UIImageViewExtension.swift */; };
 		7930BB401D6CA20900555A75 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB3F1D6CA20900555A75 /* CommonUtils.swift */; };
+		795EDD101D6FA35B008DCD52 /* body01.png in Resources */ = {isa = PBXBuildFile; fileRef = 795EDD0D1D6FA35B008DCD52 /* body01.png */; };
+		795EDD111D6FA35B008DCD52 /* head01.png in Resources */ = {isa = PBXBuildFile; fileRef = 795EDD0E1D6FA35B008DCD52 /* head01.png */; };
+		795EDD121D6FA35B008DCD52 /* m4tex.png in Resources */ = {isa = PBXBuildFile; fileRef = 795EDD0F1D6FA35B008DCD52 /* m4tex.png */; };
+		7973C4DB1D6F76EB008FFDF5 /* SceneKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7973C4DA1D6F76EB008FFDF5 /* SceneKitExtensions.swift */; };
 		7977F3691D6B34EF00E43C91 /* frame-markers-transparent.zip in Resources */ = {isa = PBXBuildFile; fileRef = 7977F3051D6B34EF00E43C91 /* frame-markers-transparent.zip */; };
 		7977F36A1D6B34EF00E43C91 /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7977F3631D6B34EF00E43C91 /* libVuforia.a */; };
 		7977F36B1D6B34EF00E43C91 /* license_3rdpartynotice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7977F3651D6B34EF00E43C91 /* license_3rdpartynotice.txt */; };
@@ -22,8 +27,6 @@
 		7980E1191D6B39170030AA55 /* StonesAndChips.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1141D6B39170030AA55 /* StonesAndChips.xml */; };
 		7980E11A1D6B39170030AA55 /* Tarmac.dat in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1151D6B39170030AA55 /* Tarmac.dat */; };
 		7980E11B1D6B39170030AA55 /* Tarmac.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1161D6B39170030AA55 /* Tarmac.xml */; };
-		7980E11D1D6B3A060030AA55 /* Plane.scn in Resources */ = {isa = PBXBuildFile; fileRef = 7980E11C1D6B3A060030AA55 /* Plane.scn */; };
-		7980E11F1D6B3A3A0030AA55 /* Transport Shuttle_dae.dae in Resources */ = {isa = PBXBuildFile; fileRef = 7980E11E1D6B3A3A0030AA55 /* Transport Shuttle_dae.dae */; };
 		7980E1211D6B48500030AA55 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1201D6B48500030AA55 /* TutorialViewController.swift */; };
 		7980E1231D6B5F060030AA55 /* CameraPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1221D6B5F060030AA55 /* CameraPermissionViewController.swift */; };
 		7980E1251D6B60A50030AA55 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1241D6B60A50030AA55 /* MainViewController.swift */; };
@@ -50,13 +53,32 @@
 		79C616501D6A7DAE007B2D5A /* VuforiaManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79C6164A1D6A7DAE007B2D5A /* VuforiaManager.mm */; };
 		79C616511D6A7DAE007B2D5A /* VuforiaObjects.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79C6164C1D6A7DAE007B2D5A /* VuforiaObjects.mm */; };
 		79C616521D6A7DAE007B2D5A /* VuforiaShaderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6164E1D6A7DAE007B2D5A /* VuforiaShaderUtils.m */; };
+		79C847621D749CC10038FB20 /* Cuerpo-DF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79C8475E1D749CC10038FB20 /* Cuerpo-DF.jpg */; };
+		79C847631D749CC10038FB20 /* Cuerpo-NM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79C8475F1D749CC10038FB20 /* Cuerpo-NM.jpg */; };
+		79C847641D749CC10038FB20 /* Futbolista Piel-NM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79C847601D749CC10038FB20 /* Futbolista Piel-NM.jpg */; };
+		79C847651D749CC10038FB20 /* Futbolista_Piel.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C847611D749CC10038FB20 /* Futbolista_Piel.png */; };
+		79C847671D749CF70038FB20 /* Ojo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79C847661D749CF70038FB20 /* Ojo.jpg */; };
+		79C8476A1D749D410038FB20 /* Black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79C847681D749D410038FB20 /* Black.jpg */; };
+		79C8476B1D749D410038FB20 /* White.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79C847691D749D410038FB20 /* White.jpg */; };
+		79F77F421D777A0D0023B430 /* PinguinosEucol.scn in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F411D777A0D0023B430 /* PinguinosEucol.scn */; };
+		79F77F491D777A5F0023B430 /* Penguin_Bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F471D777A5F0023B430 /* Penguin_Bump.jpg */; };
+		79F77F4A1D777A5F0023B430 /* Penguin-DF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F481D777A5F0023B430 /* Penguin-DF.jpg */; };
+		79F77F4F1D777A690023B430 /* Iceberg-DF.tif in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F4B1D777A690023B430 /* Iceberg-DF.tif */; };
+		79F77F501D777A690023B430 /* Iceberg-NM.tif in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F4C1D777A690023B430 /* Iceberg-NM.tif */; };
+		79F77F511D777A690023B430 /* IcebergPequeno-DF.tif in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F4D1D777A690023B430 /* IcebergPequeno-DF.tif */; };
+		79F77F521D777A690023B430 /* IcebergPequeno-NM.tif in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F4E1D777A690023B430 /* IcebergPequeno-NM.tif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		792D3D9B1D748B0500F1D759 /* TestScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = TestScene.scn; sourceTree = "<group>"; };
 		7930BB391D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamaraButtonsControlViewController.swift; sourceTree = "<group>"; };
 		7930BB3B1D6C96BD00555A75 /* Devices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
 		7930BB3D1D6C9A4400555A75 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		7930BB3F1D6CA20900555A75 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		795EDD0D1D6FA35B008DCD52 /* body01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body01.png; sourceTree = "<group>"; };
+		795EDD0E1D6FA35B008DCD52 /* head01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head01.png; sourceTree = "<group>"; };
+		795EDD0F1D6FA35B008DCD52 /* m4tex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m4tex.png; sourceTree = "<group>"; };
+		7973C4DA1D6F76EB008FFDF5 /* SceneKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitExtensions.swift; sourceTree = "<group>"; };
 		7977F3051D6B34EF00E43C91 /* frame-markers-transparent.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "frame-markers-transparent.zip"; sourceTree = "<group>"; };
 		7977F3091D6B34EF00E43C91 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
 		7977F30A1D6B34EF00E43C91 /* Box3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box3D.h; sourceTree = "<group>"; };
@@ -156,8 +178,6 @@
 		7980E1141D6B39170030AA55 /* StonesAndChips.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StonesAndChips.xml; sourceTree = "<group>"; };
 		7980E1151D6B39170030AA55 /* Tarmac.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tarmac.dat; sourceTree = "<group>"; };
 		7980E1161D6B39170030AA55 /* Tarmac.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tarmac.xml; sourceTree = "<group>"; };
-		7980E11C1D6B3A060030AA55 /* Plane.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Plane.scn; path = TuMundoUne/game.scnassets/Plane.scn; sourceTree = "<group>"; };
-		7980E11E1D6B3A3A0030AA55 /* Transport Shuttle_dae.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; name = "Transport Shuttle_dae.dae"; path = "TuMundoUne/game.scnassets/Transport Shuttle_dae.dae"; sourceTree = "<group>"; };
 		7980E1201D6B48500030AA55 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		7980E1221D6B5F060030AA55 /* CameraPermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPermissionViewController.swift; sourceTree = "<group>"; };
 		7980E1241D6B60A50030AA55 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +212,20 @@
 		79C6164C1D6A7DAE007B2D5A /* VuforiaObjects.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VuforiaObjects.mm; sourceTree = "<group>"; };
 		79C6164D1D6A7DAE007B2D5A /* VuforiaShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuforiaShaderUtils.h; sourceTree = "<group>"; };
 		79C6164E1D6A7DAE007B2D5A /* VuforiaShaderUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VuforiaShaderUtils.m; sourceTree = "<group>"; };
+		79C8475E1D749CC10038FB20 /* Cuerpo-DF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cuerpo-DF.jpg"; sourceTree = "<group>"; };
+		79C8475F1D749CC10038FB20 /* Cuerpo-NM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cuerpo-NM.jpg"; sourceTree = "<group>"; };
+		79C847601D749CC10038FB20 /* Futbolista Piel-NM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Futbolista Piel-NM.jpg"; sourceTree = "<group>"; };
+		79C847611D749CC10038FB20 /* Futbolista_Piel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Futbolista_Piel.png; sourceTree = "<group>"; };
+		79C847661D749CF70038FB20 /* Ojo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ojo.jpg; sourceTree = "<group>"; };
+		79C847681D749D410038FB20 /* Black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Black.jpg; sourceTree = "<group>"; };
+		79C847691D749D410038FB20 /* White.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = White.jpg; sourceTree = "<group>"; };
+		79F77F411D777A0D0023B430 /* PinguinosEucol.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PinguinosEucol.scn; sourceTree = "<group>"; };
+		79F77F471D777A5F0023B430 /* Penguin_Bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Penguin_Bump.jpg; sourceTree = "<group>"; };
+		79F77F481D777A5F0023B430 /* Penguin-DF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Penguin-DF.jpg"; sourceTree = "<group>"; };
+		79F77F4B1D777A690023B430 /* Iceberg-DF.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Iceberg-DF.tif"; sourceTree = "<group>"; };
+		79F77F4C1D777A690023B430 /* Iceberg-NM.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Iceberg-NM.tif"; sourceTree = "<group>"; };
+		79F77F4D1D777A690023B430 /* IcebergPequeno-DF.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IcebergPequeno-DF.tif"; sourceTree = "<group>"; };
+		79F77F4E1D777A690023B430 /* IcebergPequeno-NM.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IcebergPequeno-NM.tif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +252,7 @@
 		7930BB411D6CACAC00555A75 /* Scene Resources */ = {
 			isa = PBXGroup;
 			children = (
+				79C8475D1D749C960038FB20 /* Textures */,
 				7930BB421D6CACF600555A75 /* Scenes */,
 				7930BB431D6CACFE00555A75 /* 3D Models */,
 			);
@@ -227,6 +262,8 @@
 		7930BB421D6CACF600555A75 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				792D3D9B1D748B0500F1D759 /* TestScene.scn */,
+				79F77F411D777A0D0023B430 /* PinguinosEucol.scn */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -236,6 +273,16 @@
 			children = (
 			);
 			name = "3D Models";
+			sourceTree = "<group>";
+		};
+		795EDD0C1D6FA35B008DCD52 /* Tex */ = {
+			isa = PBXGroup;
+			children = (
+				795EDD0D1D6FA35B008DCD52 /* body01.png */,
+				795EDD0E1D6FA35B008DCD52 /* head01.png */,
+				795EDD0F1D6FA35B008DCD52 /* m4tex.png */,
+			);
+			path = Tex;
 			sourceTree = "<group>";
 		};
 		7977F3031D6B34EF00E43C91 /* vuforia-sdk-ios-6-0-112 */ = {
@@ -470,6 +517,7 @@
 			children = (
 				7980E1341D6B8EAD0030AA55 /* UIViewExtension.swift */,
 				7930BB3D1D6C9A4400555A75 /* UIImageViewExtension.swift */,
+				7973C4DA1D6F76EB008FFDF5 /* SceneKitExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -477,8 +525,6 @@
 		79C615931D6A5D0C007B2D5A = {
 			isa = PBXGroup;
 			children = (
-				7980E11E1D6B3A3A0030AA55 /* Transport Shuttle_dae.dae */,
-				7980E11C1D6B3A060030AA55 /* Plane.scn */,
 				79C6159E1D6A5D0D007B2D5A /* TuMundoUne */,
 				79C6159D1D6A5D0D007B2D5A /* Products */,
 			);
@@ -503,6 +549,7 @@
 				79C615A61D6A5D0D007B2D5A /* Assets.xcassets */,
 				7980E10E1D6B38A60030AA55 /* Game.scnassets */,
 				79C615AB1D6A5D0D007B2D5A /* Info.plist */,
+				795EDD0C1D6FA35B008DCD52 /* Tex */,
 				7980E1101D6B38F30030AA55 /* VuforiaAssets */,
 				79C615DB1D6A7C39007B2D5A /* VuforiaManager */,
 				7977F3031D6B34EF00E43C91 /* vuforia-sdk-ios-6-0-112 */,
@@ -569,6 +616,58 @@
 			name = VuforiaManager;
 			sourceTree = "<group>";
 		};
+		79C8475D1D749C960038FB20 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				79F77F441D777A3B0023B430 /* Pinguinos */,
+				79F77F431D777A300023B430 /* Futbolista */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		79F77F431D777A300023B430 /* Futbolista */ = {
+			isa = PBXGroup;
+			children = (
+				79C847681D749D410038FB20 /* Black.jpg */,
+				79C847691D749D410038FB20 /* White.jpg */,
+				79C847661D749CF70038FB20 /* Ojo.jpg */,
+				79C8475E1D749CC10038FB20 /* Cuerpo-DF.jpg */,
+				79C8475F1D749CC10038FB20 /* Cuerpo-NM.jpg */,
+				79C847601D749CC10038FB20 /* Futbolista Piel-NM.jpg */,
+				79C847611D749CC10038FB20 /* Futbolista_Piel.png */,
+			);
+			name = Futbolista;
+			sourceTree = "<group>";
+		};
+		79F77F441D777A3B0023B430 /* Pinguinos */ = {
+			isa = PBXGroup;
+			children = (
+				79F77F461D777A550023B430 /* Pinguino */,
+				79F77F451D777A4C0023B430 /* Iceberg */,
+			);
+			name = Pinguinos;
+			sourceTree = "<group>";
+		};
+		79F77F451D777A4C0023B430 /* Iceberg */ = {
+			isa = PBXGroup;
+			children = (
+				79F77F4B1D777A690023B430 /* Iceberg-DF.tif */,
+				79F77F4C1D777A690023B430 /* Iceberg-NM.tif */,
+				79F77F4D1D777A690023B430 /* IcebergPequeno-DF.tif */,
+				79F77F4E1D777A690023B430 /* IcebergPequeno-NM.tif */,
+			);
+			name = Iceberg;
+			sourceTree = "<group>";
+		};
+		79F77F461D777A550023B430 /* Pinguino */ = {
+			isa = PBXGroup;
+			children = (
+				79F77F471D777A5F0023B430 /* Penguin_Bump.jpg */,
+				79F77F481D777A5F0023B430 /* Penguin-DF.jpg */,
+			);
+			name = Pinguino;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -628,21 +727,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C847641D749CC10038FB20 /* Futbolista Piel-NM.jpg in Resources */,
+				795EDD111D6FA35B008DCD52 /* head01.png in Resources */,
+				79C847631D749CC10038FB20 /* Cuerpo-NM.jpg in Resources */,
 				7977F36C1D6B34EF00E43C91 /* readme.txt in Resources */,
 				7980E11A1D6B39170030AA55 /* Tarmac.dat in Resources */,
+				79C847621D749CC10038FB20 /* Cuerpo-DF.jpg in Resources */,
+				79F77F501D777A690023B430 /* Iceberg-NM.tif in Resources */,
+				79C847671D749CF70038FB20 /* Ojo.jpg in Resources */,
 				79C615AA1D6A5D0D007B2D5A /* LaunchScreen.storyboard in Resources */,
+				795EDD121D6FA35B008DCD52 /* m4tex.png in Resources */,
+				79C8476B1D749D410038FB20 /* White.jpg in Resources */,
+				79F77F491D777A5F0023B430 /* Penguin_Bump.jpg in Resources */,
 				7980E1171D6B39170030AA55 /* IT.png in Resources */,
+				79F77F4A1D777A5F0023B430 /* Penguin-DF.jpg in Resources */,
+				795EDD101D6FA35B008DCD52 /* body01.png in Resources */,
+				79F77F511D777A690023B430 /* IcebergPequeno-DF.tif in Resources */,
 				79C615A71D6A5D0D007B2D5A /* Assets.xcassets in Resources */,
 				7977F3691D6B34EF00E43C91 /* frame-markers-transparent.zip in Resources */,
+				79C847651D749CC10038FB20 /* Futbolista_Piel.png in Resources */,
 				7980E1181D6B39170030AA55 /* StonesAndChips.dat in Resources */,
+				79C8476A1D749D410038FB20 /* Black.jpg in Resources */,
 				7980E10F1D6B38A60030AA55 /* Game.scnassets in Resources */,
 				7980E11B1D6B39170030AA55 /* Tarmac.xml in Resources */,
 				7980E1191D6B39170030AA55 /* StonesAndChips.xml in Resources */,
+				79F77F521D777A690023B430 /* IcebergPequeno-NM.tif in Resources */,
+				79F77F421D777A0D0023B430 /* PinguinosEucol.scn in Resources */,
+				79F77F4F1D777A690023B430 /* Iceberg-DF.tif in Resources */,
+				792D3D9C1D748B0500F1D759 /* TestScene.scn in Resources */,
 				7977F36D1D6B34EF00E43C91 /* readme.txt in Resources */,
 				79C615A51D6A5D0D007B2D5A /* Iphone.storyboard in Resources */,
 				7977F36B1D6B34EF00E43C91 /* license_3rdpartynotice.txt in Resources */,
-				7980E11D1D6B3A060030AA55 /* Plane.scn in Resources */,
-				7980E11F1D6B3A3A0030AA55 /* Transport Shuttle_dae.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +769,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7980E1231D6B5F060030AA55 /* CameraPermissionViewController.swift in Sources */,
+				7973C4DB1D6F76EB008FFDF5 /* SceneKitExtensions.swift in Sources */,
 				79C616501D6A7DAE007B2D5A /* VuforiaManager.mm in Sources */,
 				7930BB3E1D6C9A4400555A75 /* UIImageViewExtension.swift in Sources */,
 				7980E1211D6B48500030AA55 /* TutorialViewController.swift in Sources */,

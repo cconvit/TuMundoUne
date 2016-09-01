@@ -76,6 +76,26 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
         vuforiaView = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewControllerWithIdentifier("Vuforia") as! ViewController
     }
     
+    func startAnimationRecordingVideo(sender:UIButton){
+    
+        
+        UIView.animateWithDuration(0.5, delay:0, options: [.Repeat, .Autoreverse], animations: {
+            
+            sender.alpha = 0.5
+            
+            
+            }, completion: nil)
+        
+        
+        
+        
+    }
+    
+    func stopAnimationRecordingVideo(){
+        
+        
+    }
+    
     //***********************************************//
     //*************** Buttons Methods ***************//
     //***********************************************//
@@ -85,6 +105,7 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
         if self.isRecording{
             self.stopVideoRecording(sender)
         }else{
+           // self.startAnimationRecordingVideo(sender)
             self.starVideoRecording(sender)
         }
     }
@@ -153,52 +174,65 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     
     func starVideoRecording(button:UIButton){
     
-        guard recorder.available else{
-            print("Cannot record the screen")
-            return
-        }
-        
-        recorder.delegate = self
-        
-        recorder.startRecordingWithMicrophoneEnabled(true){err in
-            guard err == nil else {
-                if err!.code == RPRecordingErrorCode.UserDeclined.rawValue{
-                    print("User declined app recording")
-                }
-                else if err!.code == RPRecordingErrorCode.InsufficientStorage.rawValue{
-                    print("Not enough storage to start recording")
-                }
-                else {
-                    print("Error happened = \(err!)")
-                }
+        dispatch_async(dispatch_get_main_queue(),{
+            
+            guard self.recorder.available else{
+                print("Cannot record the screen")
                 return
             }
             
-            print("Successfully started recording")
-            self.changeVideoIconButton(button)
-        }
+            self.recorder.delegate = self
+            
+            self.recorder.startRecordingWithMicrophoneEnabled(true){err in
+                guard err == nil else {
+                    if err!.code == RPRecordingErrorCode.UserDeclined.rawValue{
+                        print("User declined app recording")
+                    }
+                    else if err!.code == RPRecordingErrorCode.InsufficientStorage.rawValue{
+                        print("Not enough storage to start recording")
+                    }
+                    else {
+                        print("Error happened = \(err!)")
+                    }
+                    return
+                }
+                
+                print("Successfully started recording")
+                self.changeVideoIconButton(button)
+            }
+            
+        })
+        
+        
+        
 
     }
     
     func stopVideoRecording(button:UIButton) {
         
       //  self.deInitVuforiaView()
-        
-        recorder.stopRecordingWithHandler{controller, err in
+        dispatch_async(dispatch_get_main_queue(),{
             
-            guard let previewController = controller where err == nil else {
-                print("Failed to stop recording")
-                return
+            self.recorder.stopRecordingWithHandler{controller, err in
+                
+                guard let previewController = controller where err == nil else {
+                    print("Failed to stop recording")
+                    return
+                }
+                
+                self.changeVideoIconButton(button)
+                self.buttonWindow.rootViewController!.view.hidden = true
+                previewController.previewControllerDelegate = self
+                
+                self.presentViewController(previewController, animated: true,
+                    completion: nil)
+                
             }
             
-            self.changeVideoIconButton(button)
-            self.buttonWindow.rootViewController!.view.hidden = true
-            previewController.previewControllerDelegate = self
-            
-            self.presentViewController(previewController, animated: true,
-                completion: nil)
-            
-        }
+        })
+        
+        
+        
         
     }
 

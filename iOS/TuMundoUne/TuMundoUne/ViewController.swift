@@ -160,7 +160,14 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
     private func createStonesScene(with view: VuforiaEAGLView) -> SCNScene {
         _ = SCNScene()
         
-        return SCNScene(named: "Plane.scn")!
+        let scene = SCNScene(named: "PinguinosEucol.scn")!
+        
+        //var james = scene.rootNode.childNodeWithName("James", recursively: true)!
+        
+        //let animacion = CAAnimation.animationWithSceneNamed("Game.scnassets/testRig-2.DAE")
+      //  james.addAnimation(animacion!, forKey: "Start")
+       
+        return scene
         
         /*
          boxMaterial.diffuse.contents = UIColor.lightGrayColor()
@@ -187,7 +194,7 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
     
     private func createChipsScene(with view: VuforiaEAGLView) -> SCNScene {
         
-        return SCNScene(named: "Plane.scn")!
+        return SCNScene(named: "TestScene.scn")!
         
         /*let scene = SCNScene()
          
