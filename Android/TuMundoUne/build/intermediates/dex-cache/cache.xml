@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_9d7c85b793322e2cf07562dadc2910490f3da293/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_f94a8ab666035c4352ab7c584a389f8cacf70fa9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_874ecd16697c3e664d3295c5554441ccf090d456/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c88f6a95881794e262b819f43907a2bb90aefebc">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b731b15bcb6664c265538bcadb2d39feff52f3d1/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.0_74ffd6734af9c693684699d51eaf65e7397855ad/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.0_43f1d9eed5beae74178bb4f6ce0a15d3925c494e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_11984d3f2fffd290d71bf4390acc45cfb503e815/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_d483f663408f726254a6bf83fd4f2092bbd56d81/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_3c9e8446406960f4e78180ec5ee31e2710e9abbd/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.0_f4eb3fd7c6ea536f55a2ba61f2351688d0759b7d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_d6fd7dd090e1a7fed91ce8d605affd7f4fc19739/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_37d6c709e4e9b69896c81fccb6031bf1eaced2b8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_2bd6fe2e2dc295f4ae9ced28f44bd639c3fa7906/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ab96f77f0959659e066985f99bb1e95c00719cca">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_eab08581ff33a2d8ab63f3ff9ba839c990dfe9d3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_b1e1f3fe72db07a683b50327577e9a21a766f087/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.0_c735c4b0d08b04bec6d245127fe8099bea91b11c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/Users/riverarcarlosm/Documents/Developments/Tigo/TuMundoUne/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_8f3de8a48310e1cdbfcd7c51fdaa73425880e95c/classes.dex" />
+    </item>
+
+</items>

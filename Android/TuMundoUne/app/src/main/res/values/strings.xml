@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TuMundoUne</string>
+    <string name="title_wizard">Intrucciones</string>
+    <string name="page_one">Apunta tu celular al logo de UNE</string>
+    <string name="page_two">Diviértete con animaciones y contenidos virtuales en tu teléfono; haz fotos, videos y súbelos a tus redes sociales</string>
+    <string name="page_three">En la parte superior, encontrarás acceso directo a la página Web. para mayor información de nuestros productos</string>
+
+</resources>
