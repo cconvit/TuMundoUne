@@ -67,7 +67,7 @@ class TutorialViewController: UIViewController {
     //***********************************************//
     
     
-    @IBAction func rightAction(sender: UISwipeGestureRecognizer) {
+    @IBAction func rightAction(_ sender: UISwipeGestureRecognizer) {
         
         if self.currentIndex-1 >= 0{
             
@@ -78,14 +78,14 @@ class TutorialViewController: UIViewController {
     }
     
     
-    @IBAction func leftAction(sender: UISwipeGestureRecognizer) {
+    @IBAction func leftAction(_ sender: UISwipeGestureRecognizer) {
         
         if self.currentIndex+1 < self.tutorialImages.count{
         
             self.currentIndex += 1
             self.setImageAtIndex(self.currentIndex)
         }else if self.currentIndex+1 == self.tutorialImages.count{
-            self.performSegueWithIdentifier("GoToMain", sender: self)
+            self.performSegue(withIdentifier: "GoToMain", sender: self)
         }
         
         
@@ -95,10 +95,10 @@ class TutorialViewController: UIViewController {
     //***************** Util Methods ****************//
     //***********************************************//
     
-    func setImageAtIndex(index:Int){
+    func setImageAtIndex(_ index:Int){
         
   
-        UIView.transitionWithView(self.tutorialImageUIImageView, duration: 0.3, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
+        UIView.transition(with: self.tutorialImageUIImageView, duration: 0.3, options: UIViewAnimationOptions.transitionCrossDissolve, animations: {
             self.tutorialImageUIImageView.image = UIImage(named: self.tutorialImages[index])
             }) { (result) in
                 
@@ -111,7 +111,7 @@ class TutorialViewController: UIViewController {
     }
     
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 

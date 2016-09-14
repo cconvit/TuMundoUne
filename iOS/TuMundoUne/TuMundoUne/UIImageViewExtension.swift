@@ -14,12 +14,12 @@ extension UIImageView {
         
         if sizeScale != 1{
             
-            let size = CGSizeApplyAffineTransform(self.image!.size, CGAffineTransformMakeScale(sizeScale, sizeScale))
+            let size = self.image!.size.applying(CGAffineTransform(scaleX: sizeScale, y: sizeScale))
             let hasAlpha = true
             let scale: CGFloat = 0.0 // Automatically use scale factor of main screen
             
             UIGraphicsBeginImageContextWithOptions(size, !hasAlpha, scale)
-            self.image!.drawInRect(CGRect(origin: CGPointZero, size: size))
+            self.image!.draw(in: CGRect(origin: CGPoint.zero, size: size))
             
             let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()

@@ -12,30 +12,30 @@ import UIKit
 class UIAnimationsViews: NSObject {
     
     
-    static func showViewWithAlpha(parentController: UIViewController,container:UIView,child:UIViewController)
+    static func showViewWithAlpha(_ parentController: UIViewController,container:UIView,child:UIViewController)
     {
         
-        child.view.frame = CGRectMake(0, 0, CGRectGetWidth(container.bounds), CGRectGetHeight(container.bounds))
+        child.view.frame = CGRect(x: 0, y: 0, width: container.bounds.width, height: container.bounds.height)
         parentController.addChildViewController(child)
         child.view.alpha = 0
         container.addSubview(child.view)
-        container.bringSubviewToFront(child.view)
+        container.bringSubview(toFront: child.view)
         
-        UIView.animateWithDuration(0.5) {
+        UIView.animate(withDuration: 0.5, animations: {
             child.view.alpha = 1
-        }
+        }) 
         
     }
     
-    static func showViewWithAlphaValue(container:UIView,child:UIViewController)
+    static func showViewWithAlphaValue(_ container:UIView,child:UIViewController)
     {
         
         child.view.alpha = 0
-        container.bringSubviewToFront(child.view)
+        container.bringSubview(toFront: child.view)
         
-        UIView.animateWithDuration(0.5) {
+        UIView.animate(withDuration: 0.5, animations: {
             child.view.alpha = 1
-        }
+        }) 
         
     }
 }

@@ -53,8 +53,8 @@ class CamaraButtonsControlViewController: UIViewController {
         
         if self.videoButtonHide{
         
-            self.videoUIButton.hidden = self.videoButtonHide
-            let xConstraint = NSLayoutConstraint(item: self.cameraUIButton, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0)
+            self.videoUIButton.isHidden = self.videoButtonHide
+            let xConstraint = NSLayoutConstraint(item: self.cameraUIButton, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
             
             self.view.addConstraint(xConstraint)
         }
@@ -75,17 +75,17 @@ class CamaraButtonsControlViewController: UIViewController {
         
     }
 
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
     
-    @IBAction func videoAction(sender: UIButton) {
+    @IBAction func videoAction(_ sender: UIButton) {
         
         self.delegate.videoActionDelegate(sender)
     }
     
-    @IBAction func photoAction(sender: UIButton) {
+    @IBAction func photoAction(_ sender: UIButton) {
         
         self.delegate.photoActionDelegate(sender)
     }
@@ -94,10 +94,10 @@ class CamaraButtonsControlViewController: UIViewController {
     //*************** Gesture Methods ***************//
     //***********************************************//
     
-    @IBAction func tapTopBanner(sender: UITapGestureRecognizer) {
+    @IBAction func tapTopBanner(_ sender: UITapGestureRecognizer) {
         
-        let url = NSURL(string: Constants.URL_UNE)!
-        UIApplication.sharedApplication().openURL(url)
+        let url = URL(string: Constants.URL_UNE)!
+        UIApplication.shared.openURL(url)
     }
 
 

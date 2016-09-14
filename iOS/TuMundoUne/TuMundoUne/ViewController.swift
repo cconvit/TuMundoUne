@@ -10,16 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let vuforiaLiceseKey = "AVtwaB3/////AAAAGcCvUYrxCUHmvlbK8UK5wX4KdH91d13kAMKaHFaKR7LJIp+Vw+GmgbIFuSoVZgLnOgeqNqMFwdwcw3hpr/Ef67t3sbxCRGp2dqh+/lKWrF1PYdI5GzV4jcrr75RZ761YswOFyx99wG1EizLXaF0f36G1uKomGzy8THmUfrnCj48572VoKcBefnp2BJEXnwU9BgR94lgLunuyZwrPxFcbYurLDpkZt1EMI7emicNv7J1h1Qvh3+uWMsEXz61rJF15bJnfHEtwLe/RrEkWbCuG3b0hibABJdQ+y/lwt+i5tTUYtXf8uR47PVAB9/wsz6WT+Qj7831aM2Sej4yED1fJYM/esze8p3MI/eh8WXnZDy4u"
+
     let vuforiaDataSetFile = "StonesAndChips.xml"
     
     var vuforiaManager: VuforiaManager? = nil
     
     let boxMaterial = SCNMaterial()
-    private var lastSceneName: String? = nil
+    fileprivate var lastSceneName: String? = nil
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
         vuforiaManager = nil
     }
     
@@ -34,11 +34,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
       /*
         do {
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
 
 private extension ViewController {
     func prepare() {
-        vuforiaManager = VuforiaManager(licenseKey: vuforiaLiceseKey, dataSetFile: vuforiaDataSetFile)
+        vuforiaManager = VuforiaManager(licenseKey: Constants.VUFORIA_KEY, dataSetFile: Constants.VUFORIA_DATASET)
         if let manager = vuforiaManager {
             manager.delegate = self
             manager.eaglView.sceneSource = self
@@ -61,14 +61,14 @@ private extension ViewController {
             self.view = manager.eaglView
         }
         
-        let notificationCenter = NSNotificationCenter.defaultCenter()
+        let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(didRecieveWillResignActiveNotification),
-                                       name: UIApplicationWillResignActiveNotification, object: nil)
+                                       name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
         
         notificationCenter.addObserver(self, selector: #selector(didRecieveDidBecomeActiveNotification),
-                                       name: UIApplicationDidBecomeActiveNotification, object: nil)
+                                       name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
         
-        vuforiaManager?.prepareWithOrientation(.Portrait)
+        vuforiaManager?.prepare(with: .portrait)
     }
     
     func pause() {
@@ -89,17 +89,21 @@ private extension ViewController {
 }
 
 extension ViewController {
-    func didRecieveWillResignActiveNotification(notification: NSNotification) {
+    func didRecieveWillResignActiveNotification(_ notification: Notification) {
         pause()
     }
     
-    func didRecieveDidBecomeActiveNotification(notification: NSNotification) {
+    func didRecieveDidBecomeActiveNotification(_ notification: Notification) {
         resume()
     }
 }
 
 extension ViewController: VuforiaManagerDelegate {
-    func vuforiaManagerDidFinishPreparing(manager: VuforiaManager!) {
+    public func vuforiaManager(_ manager: VuforiaManager!, didFailToPreparingWithError error: Error!) {
+    print("did faid to preparing \(error)\n")
+    }
+
+    func vuforiaManagerDidFinishPreparing(_ manager: VuforiaManager!) {
         print("did finish preparing\n")
         
         do {
@@ -109,25 +113,22 @@ extension ViewController: VuforiaManagerDelegate {
             print("\(error)")
         }
     }
+
     
-    func vuforiaManager(manager: VuforiaManager!, didFailToPreparingWithError error: NSError!) {
-        print("did faid to preparing \(error)\n")
-    }
-    
-    func vuforiaManager(manager: VuforiaManager!, didUpdateWithState state: VuforiaState!) {
+    func vuforiaManager(_ manager: VuforiaManager!, didUpdateWith state: VuforiaState!) {
         for index in 0 ..< state.numberOfTrackableResults {
-            let result = state.trackableResultAtIndex(index)
-            let trackerableName = result.trackable.name
+            let result = state.trackableResult(at: index)
+            let trackerableName = result?.trackable.name
             //print("\(trackerableName)")
             if trackerableName == "stones" {
-                boxMaterial.diffuse.contents = UIColor.redColor()
+                boxMaterial.diffuse.contents = UIColor.red
                 
                 if lastSceneName != "stones" {
                     manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "stones"])
                     lastSceneName = "stones"
                 }
             }else {
-                boxMaterial.diffuse.contents = UIColor.blueColor()
+                boxMaterial.diffuse.contents = UIColor.blue
                 
                 if lastSceneName != "chips" {
                     manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "chips"])
@@ -140,14 +141,31 @@ extension ViewController: VuforiaManagerDelegate {
 }
 
 extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
-    
-    func sceneForEAGLView(view: VuforiaEAGLView!, userInfo: [String : AnyObject]?) -> SCNScene! {
+    public func scene(for view: VuforiaEAGLView!, userInfo: [String : Any]! = [:]) -> SCNScene! {
+
         guard let userInfo = userInfo else {
             print("default scene")
             return createStonesScene(with: view)
         }
         
-        if let sceneName = userInfo["scene"] as? String where sceneName == "stones" {
+        if let sceneName = userInfo["scene"] as? String , sceneName == "stones" {
+            print("stones scene")
+            return createStonesScene(with: view)
+        }else {
+            print("chips scene")
+            return createChipsScene(with: view)
+        }
+
+    }
+
+    
+    func scene(for view: VuforiaEAGLView!, userInfo: [String : AnyObject]?) -> SCNScene! {
+        guard let userInfo = userInfo else {
+            print("default scene")
+            return createStonesScene(with: view)
+        }
+        
+        if let sceneName = userInfo["scene"] as? String , sceneName == "stones" {
             print("stones scene")
             return createStonesScene(with: view)
         }else {
@@ -157,7 +175,7 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
         
     }
     
-    private func createStonesScene(with view: VuforiaEAGLView) -> SCNScene {
+    fileprivate func createStonesScene(with view: VuforiaEAGLView) -> SCNScene {
         _ = SCNScene()
         
         let scene = SCNScene(named: "PinguinosEucol.scn")!
@@ -192,7 +210,7 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
          */
     }
     
-    private func createChipsScene(with view: VuforiaEAGLView) -> SCNScene {
+    fileprivate func createChipsScene(with view: VuforiaEAGLView) -> SCNScene {
         
         return SCNScene(named: "TestScene.scn")!
         
@@ -220,17 +238,17 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
     }
     
     
-    func vuforiaEAGLView(view: VuforiaEAGLView!, didTouchDownNode node: SCNNode!) {
+    func vuforiaEAGLView(_ view: VuforiaEAGLView!, didTouchDownNode node: SCNNode!) {
         print("touch down \(node.name)\n")
         boxMaterial.transparency = 0.6
     }
     
-    func vuforiaEAGLView(view: VuforiaEAGLView!, didTouchUpNode node: SCNNode!) {
+    func vuforiaEAGLView(_ view: VuforiaEAGLView!, didTouchUp node: SCNNode!) {
         print("touch up \(node.name)\n")
         boxMaterial.transparency = 1.0
     }
     
-    func vuforiaEAGLView(view: VuforiaEAGLView!, didTouchCancelNode node: SCNNode!) {
+    func vuforiaEAGLView(_ view: VuforiaEAGLView!, didTouchCancel node: SCNNode!) {
         print("touch cancel \(node.name)\n")
         boxMaterial.transparency = 1.0
     }

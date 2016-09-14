@@ -15,40 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "206"
             endingLineNumber = "206"
-            landmarkName = "stopVideoRecording(_:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TuMundoUne.CameraControlViewController.stopVideoRecording (__ObjC.UIButton) -&gt; ()"
-                  moduleName = "TuMundoUne"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cconvit/Developer/Betalab/TuMundoUne/iOS/TuMundoUne/TuMundoUne/CameraControlViewController.swift"
-                  timestampString = "493960550.166254"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "208"
-                  endingLineNumber = "208"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TuMundoUne.CameraControlViewController.(stopVideoRecording (__ObjC.UIButton) -&gt; ()).(closure #1)"
-                  moduleName = "TuMundoUne"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cconvit/Developer/Betalab/TuMundoUne/iOS/TuMundoUne/TuMundoUne/CameraControlViewController.swift"
-                  timestampString = "493960550.166638"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "210"
-                  endingLineNumber = "210"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
+            landmarkName = "starVideoRecording(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -63,104 +31,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "232"
             endingLineNumber = "232"
-            landmarkName = "previewControllerDidFinish(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TuMundoUne/ViewController.swift"
-            timestampString = "493592768.639303"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "deinit"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TuMundoUne/Devices.swift"
-            timestampString = "493657375.436453"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "get_device_id()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TuMundoUne/CamaraButtonsControlViewController.swift"
-            timestampString = "493692946.842119"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "setCustomView()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TuMundoUne/Devices.swift"
-            timestampString = "493684378.613903"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "get_device_id()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TuMundoUne/ViewController.swift"
-            timestampString = "493852687.843281"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "createStonesScene(with:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TuMundoUne/ViewController.swift"
-            timestampString = "493853745.195251"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "createStonesScene(with:)"
-            landmarkType = "5">
+            landmarkName = "stopVideoRecording(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TuMundoUne.CameraControlViewController.stopVideoRecording (__ObjC.UIButton) -&gt; ()"
+                  moduleName = "TuMundoUne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cconvit/Developer/Betalab/TuMundoUne/iOS/TuMundoUne/TuMundoUne/CameraControlViewController.swift"
+                  timestampString = "495500096.11888"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "232"
+                  endingLineNumber = "232"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TuMundoUne.CameraControlViewController.(stopVideoRecording (__ObjC.UIButton) -&gt; ()).(closure #1)"
+                  moduleName = "TuMundoUne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cconvit/Developer/Betalab/TuMundoUne/iOS/TuMundoUne/TuMundoUne/CameraControlViewController.swift"
+                  timestampString = "495500096.122049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "232"
+                  endingLineNumber = "232"
+                  offsetFromSymbolStart = "428">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -176,7 +80,7 @@
             startingLineNumber = "109"
             endingLineNumber = "109"
             landmarkName = "videoActionDelegate(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -192,7 +96,7 @@
             startingLineNumber = "106"
             endingLineNumber = "106"
             landmarkName = "videoActionDelegate(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -208,7 +112,7 @@
             startingLineNumber = "105"
             endingLineNumber = "105"
             landmarkName = "videoActionDelegate(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

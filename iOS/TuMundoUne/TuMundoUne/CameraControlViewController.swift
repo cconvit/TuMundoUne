@@ -10,8 +10,8 @@ import UIKit
 import ReplayKit
 
 protocol CameraButtonControllersDelegate {
-    func videoActionDelegate(button:UIButton)
-    func photoActionDelegate(button:UIButton)
+    func videoActionDelegate(_ button:UIButton)
+    func photoActionDelegate(_ button:UIButton)
 }
 
 class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPPreviewViewControllerDelegate,CameraButtonControllersDelegate {
@@ -22,8 +22,8 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     
     
     var buttonWindow: UIWindow!
-    let recorder = RPScreenRecorder.sharedRecorder()
-    var vuforiaView:ViewController!
+    let recorder = RPScreenRecorder.shared()
+    var vuforiaView:VuforiaViewController!
     var isRecording:Bool = false
     //let vuforiaContainerPositionY:[CGFloat] = [98,116,265,368]
     
@@ -35,7 +35,7 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
         
         
     }
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         
         self.addButtonsControllers()
@@ -53,11 +53,11 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     //***************** UI Methods ******************//
     //***********************************************//
     
-    func isRecorderAvailable(controllers:CamaraButtonsControlViewController){
+    func isRecorderAvailable(_ controllers:CamaraButtonsControlViewController){
         
-        guard recorder.available else{
+        guard recorder.isAvailable else{
             controllers.videoButtonHide = true
-            controllers.photoButtonPositionX  = UIScreen.mainScreen().bounds.size.width/2
+            controllers.photoButtonPositionX  = UIScreen.main.bounds.size.width/2
             return
         }
         
@@ -73,13 +73,13 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
 
     func showVuforiaView(){
         
-        vuforiaView = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewControllerWithIdentifier("Vuforia") as! ViewController
+        vuforiaView = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewController(withIdentifier: "Vuforia View") as! VuforiaViewController
     }
     
-    func startAnimationRecordingVideo(sender:UIButton){
+    func startAnimationRecordingVideo(_ sender:UIButton){
     
         
-        UIView.animateWithDuration(0.5, delay:0, options: [.Repeat, .Autoreverse], animations: {
+        UIView.animate(withDuration: 0.5, delay:0, options: [.repeat, .autoreverse], animations: {
             
             sender.alpha = 0.5
             
@@ -100,7 +100,7 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     //*************** Buttons Methods ***************//
     //***********************************************//
     
-    func videoActionDelegate(sender: UIButton) {
+    func videoActionDelegate(_ sender: UIButton) {
         
         if self.isRecording{
             self.stopVideoRecording(sender)
@@ -110,17 +110,17 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
         }
     }
     
-    func photoActionDelegate(sender: UIButton) {
+    func photoActionDelegate(_ sender: UIButton) {
         
         let old = sender.transform
         
-        UIView.animateWithDuration(0.3, delay: 0, options: [], animations: {
+        UIView.animate(withDuration: 0.3, delay: 0, options: [], animations: {
             
-            sender.transform=CGAffineTransformMakeScale(1.5, 1.5)
+            sender.transform=CGAffineTransform(scaleX: 1.5, y: 1.5)
             sender.alpha = 0.5
             }, completion: { (result) in
                 
-                UIView.animateWithDuration(0.3, animations: {
+                UIView.animate(withDuration: 0.3, animations: {
                     sender.transform=old
                     sender.alpha = 1
                 })
@@ -134,7 +134,7 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     //**************** Util Methods *****************//
     //***********************************************//
     
-    func changeVideoIconButton(button:UIButton){
+    func changeVideoIconButton(_ button:UIButton){
     
         var image:UIImage!
         if self.isRecording{
@@ -145,7 +145,7 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
             image = UIImage(named: "IconVideoRecord")
         }
         
-        button.setImage(image, forState: UIControlState.Normal)
+        button.setImage(image, for: UIControlState())
         self.isRecording = !self.isRecording
     
     }
@@ -163,8 +163,8 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     
     func addButtonsControllers() {
         
-        self.buttonWindow = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let cameraButtonsControllers = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewControllerWithIdentifier("Camara Buttons Control") as! CamaraButtonsControlViewController
+        self.buttonWindow = UIWindow(frame: UIScreen.main.bounds)
+        let cameraButtonsControllers = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewController(withIdentifier: "Camara Buttons Control") as! CamaraButtonsControlViewController
         cameraButtonsControllers.delegate = self
         self.isRecorderAvailable(cameraButtonsControllers)
         self.buttonWindow.rootViewController = cameraButtonsControllers
@@ -172,23 +172,23 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
         
     }
     
-    func starVideoRecording(button:UIButton){
+    func starVideoRecording(_ button:UIButton){
     
-        dispatch_async(dispatch_get_main_queue(),{
+        DispatchQueue.main.async(execute: {
             
-            guard self.recorder.available else{
+            guard self.recorder.isAvailable else{
                 print("Cannot record the screen")
                 return
             }
             
             self.recorder.delegate = self
             
-            self.recorder.startRecordingWithMicrophoneEnabled(true){err in
+            self.recorder.startRecording(withMicrophoneEnabled: true){err in
                 guard err == nil else {
-                    if err!.code == RPRecordingErrorCode.UserDeclined.rawValue{
+                    if err!._code == RPRecordingErrorCode.userDeclined.rawValue{
                         print("User declined app recording")
                     }
-                    else if err!.code == RPRecordingErrorCode.InsufficientStorage.rawValue{
+                    else if err!._code == RPRecordingErrorCode.insufficientStorage.rawValue{
                         print("Not enough storage to start recording")
                     }
                     else {
@@ -208,23 +208,23 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
 
     }
     
-    func stopVideoRecording(button:UIButton) {
+    func stopVideoRecording(_ button:UIButton) {
         
       //  self.deInitVuforiaView()
-        dispatch_async(dispatch_get_main_queue(),{
+        DispatchQueue.main.async(execute: {
             
-            self.recorder.stopRecordingWithHandler{controller, err in
+            self.recorder.stopRecording{controller, err in
                 
-                guard let previewController = controller where err == nil else {
+                guard let previewController = controller , err == nil else {
                     print("Failed to stop recording")
                     return
                 }
                 
                 self.changeVideoIconButton(button)
-                self.buttonWindow.rootViewController!.view.hidden = true
+                self.buttonWindow.rootViewController!.view.isHidden = true
                 previewController.previewControllerDelegate = self
                 
-                self.presentViewController(previewController, animated: true,
+                self.present(previewController, animated: true,
                     completion: nil)
                 
             }
@@ -241,15 +241,15 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     //******* Record Preview Delegate Methods *******//
     //***********************************************//
     
-    func previewControllerDidFinish(previewController: RPPreviewViewController) {
+    func previewControllerDidFinish(_ previewController: RPPreviewViewController) {
         print("Finished the preview")
-        self.buttonWindow.rootViewController!.view.hidden = false
-        dismissViewControllerAnimated(true, completion: nil)
+        self.buttonWindow.rootViewController!.view.isHidden = false
+        dismiss(animated: true, completion: nil)
         
         //self.showVuforiaView()
     }
     
-    func previewController(previewController: RPPreviewViewController,didFinishWithActivityTypes activityTypes: Set<String>) {
+    func previewController(_ previewController: RPPreviewViewController,didFinishWithActivityTypes activityTypes: Set<String>) {
         print("Preview finished activities \(activityTypes)")
     }
     
@@ -258,12 +258,12 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     //***********************************************//
     
     
-    func screenRecorderDidChangeAvailability(screenRecorder: RPScreenRecorder) {
+    func screenRecorderDidChangeAvailability(_ screenRecorder: RPScreenRecorder) {
         print("Screen recording availability changed")
     }
     
-    func screenRecorder(screenRecorder: RPScreenRecorder,
-                        didStopRecordingWithError error: NSError,
+    func screenRecorder(_ screenRecorder: RPScreenRecorder,
+                        didStopRecordingWithError error: Error,
                                                   previewViewController: RPPreviewViewController?) {
         print("Screen recording finished")
     }

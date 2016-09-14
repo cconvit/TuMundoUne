@@ -43,14 +43,14 @@ class MainViewController: UIViewController {
     
     func cameraStatus()->Bool{
         
-        if AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo) ==  AVAuthorizationStatus.Denied
+        if AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) ==  AVAuthorizationStatus.denied
         {
             // Already Authorized
             self.showCameraPermissionView()
             return false
-        }else if AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo) ==  AVAuthorizationStatus.NotDetermined{
+        }else if AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) ==  AVAuthorizationStatus.notDetermined{
             
-            AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo) { (result) in
+            AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo) { (result) in
                 
                 self.settings()
             }
@@ -67,7 +67,7 @@ class MainViewController: UIViewController {
         
         if cameraPermission == nil{
             
-            cameraPermission = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewControllerWithIdentifier("Camera Permission") as! CameraPermissionViewController
+            cameraPermission = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewController(withIdentifier: "Camera Permission") as! CameraPermissionViewController
             //posts.potsDelegate = self
             UIAnimationsViews.showViewWithAlpha(self, container: self.view, child: cameraPermission)
         }else{
@@ -82,7 +82,7 @@ class MainViewController: UIViewController {
         
         if cameraControl == nil{
             
-            cameraControl = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewControllerWithIdentifier("Camera Control") as! CameraControlViewController
+            cameraControl = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewController(withIdentifier: "Camera Control") as! CameraControlViewController
             //posts.potsDelegate = self
             UIAnimationsViews.showViewWithAlpha(self, container: self.view, child: cameraControl)
         }else{
@@ -93,7 +93,7 @@ class MainViewController: UIViewController {
         
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 

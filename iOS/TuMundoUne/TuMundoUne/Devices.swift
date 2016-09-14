@@ -21,11 +21,11 @@ class Devices{
     let iPad2       = 4
     let iPadRetina  = 4
     
-    func dev_width()  -> CGFloat { return UIScreen.mainScreen().bounds.size.width  }
+    func dev_width()  -> CGFloat { return UIScreen.main.bounds.size.width  }
     
-    func dev_height() -> CGFloat { return UIScreen.mainScreen().bounds.size.height }
+    func dev_height() -> CGFloat { return UIScreen.main.bounds.size.height }
     
-    func dev_scale()  -> CGFloat { return UIScreen.mainScreen().scale }
+    func dev_scale()  -> CGFloat { return UIScreen.main.scale }
     
     func is_IPAD() -> Bool {
         if (device_type==iPad2) || (device_type==iPadRetina) {

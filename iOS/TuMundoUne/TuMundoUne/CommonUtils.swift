@@ -9,12 +9,12 @@
 import Foundation
 
 struct CommonUtils {
-    static func imageWithImage(image: UIImage, scaleToSize newSize: CGSize, isAspectRation aspect: Bool) -> UIImage{
+    static func imageWithImage(_ image: UIImage, scaleToSize newSize: CGSize, isAspectRation aspect: Bool) -> UIImage{
         
         let originRatio = image.size.width / image.size.height;//CGFloat
         let newRatio = newSize.width / newSize.height;
         
-        var sz: CGSize = CGSizeZero
+        var sz: CGSize = CGSize.zero
         
         if (!aspect) {
             sz = newSize
@@ -32,9 +32,9 @@ struct CommonUtils {
         sz.width /= scale
         sz.height /= scale
         UIGraphicsBeginImageContextWithOptions(sz, false, scale)
-        image.drawInRect(CGRectMake(0, 0, sz.width, sz.height))
+        image.draw(in: CGRect(x: 0, y: 0, width: sz.width, height: sz.height))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return newImage
+        return newImage!
     }
 }

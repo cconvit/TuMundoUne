@@ -50,16 +50,16 @@ class CameraPermissionViewController: UIViewController {
     //***********************************************//
     
     
-    @IBAction func requestCameraPermissionAction(sender: AnyObject) {
+    @IBAction func requestCameraPermissionAction(_ sender: AnyObject) {
         
-        if let url = NSURL(string:UIApplicationOpenSettingsURLString) {
-            UIApplication.sharedApplication().openURL(url)
+        if let url = URL(string:UIApplicationOpenSettingsURLString) {
+            UIApplication.shared.openURL(url)
         }
         
     }
 
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 
