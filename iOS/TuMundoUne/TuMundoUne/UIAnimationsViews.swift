@@ -19,7 +19,7 @@ class UIAnimationsViews: NSObject {
         parentController.addChildViewController(child)
         child.view.alpha = 0
         container.addSubview(child.view)
-        container.bringSubview(toFront: child.view)
+        //container.bringSubview(toFront: child.view)
         
         UIView.animate(withDuration: 0.5, animations: {
             child.view.alpha = 1

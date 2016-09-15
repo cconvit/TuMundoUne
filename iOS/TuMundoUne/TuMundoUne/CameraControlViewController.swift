@@ -14,17 +14,23 @@ protocol CameraButtonControllersDelegate {
     func photoActionDelegate(_ button:UIButton)
 }
 
-class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPPreviewViewControllerDelegate,CameraButtonControllersDelegate {
+protocol MaskViewDelegate {
+    func pinguinosMask()
+    func futbolistaMask()
+}
+
+class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPPreviewViewControllerDelegate,CameraButtonControllersDelegate,MaskViewDelegate{
 
     
     @IBOutlet weak var vuforiaContainerUIView: UIView!
-    
+    @IBOutlet weak var maskContainer: UIImageView!
     
     
     var buttonWindow: UIWindow!
     let recorder = RPScreenRecorder.shared()
     var vuforiaView:VuforiaViewController!
     var isRecording:Bool = false
+    var videoTransform:CGAffineTransform!
     //let vuforiaContainerPositionY:[CGFloat] = [98,116,265,368]
     
     override func viewDidLoad() {
@@ -40,6 +46,7 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
         
         self.addButtonsControllers()
         UIAnimationsViews.showViewWithAlpha(self, container: self.view, child: vuforiaView)
+        self.view.bringSubview(toFront: self.maskContainer)
         
     }
 
@@ -74,11 +81,13 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     func showVuforiaView(){
         
         vuforiaView = UIStoryboard(name: Constants.STORYBOARD_IPHONE, bundle: nil).instantiateViewController(withIdentifier: "Vuforia View") as! VuforiaViewController
+        
+        self.vuforiaView.maskViewDelegate = self
     }
     
     func startAnimationRecordingVideo(_ sender:UIButton){
     
-        
+       /*
         UIView.animate(withDuration: 0.5, delay:0, options: [.repeat, .autoreverse], animations: {
             
             sender.alpha = 0.5
@@ -86,8 +95,16 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
             
             }, completion: nil)
         
+        */
+        videoTransform = sender.transform
         
-        
+        UIView.animate(withDuration: 0.3, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction], animations: {
+            
+            sender.transform=CGAffineTransform(scaleX: 1.1, y: 1.1)
+            }, completion: { (result) in
+                
+               
+        })
         
     }
     
@@ -103,9 +120,11 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     func videoActionDelegate(_ sender: UIButton) {
         
         if self.isRecording{
+            sender.layer.removeAllAnimations()
+            sender.transform = videoTransform
             self.stopVideoRecording(sender)
         }else{
-           // self.startAnimationRecordingVideo(sender)
+            
             self.starVideoRecording(sender)
         }
     }
@@ -199,6 +218,7 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
                 
                 print("Successfully started recording")
                 self.changeVideoIconButton(button)
+                self.startAnimationRecordingVideo(button)
             }
             
         })
@@ -268,6 +288,28 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
         print("Screen recording finished")
     }
 
+    
+    //***********************************************//
+    //************ Mask Delegate Methods ************//
+    //***********************************************//
+    
+    func pinguinosMask(){
+        
+        DispatchQueue.main.async {
+            self.maskContainer.alpha = 0.5
+        }
+        
+    
+    }
+    
+    func futbolistaMask(){
+        
+        DispatchQueue.main.async {
+            self.maskContainer.alpha = 0
+        }
+        
+        
+    }
     
     
 

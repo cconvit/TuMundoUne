@@ -11,7 +11,7 @@ import UIKit
 class VuforiaViewController: UIViewController {
 
     var vuforiaManager: VuforiaManager? = nil
-
+    var maskViewDelegate:MaskViewDelegate!
     fileprivate var lastSceneName: String? = nil
     
     deinit {
@@ -21,6 +21,8 @@ class VuforiaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         prepare()
     }
@@ -32,6 +34,12 @@ class VuforiaViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -115,21 +123,26 @@ extension VuforiaViewController: VuforiaManagerDelegate {
             
             switch trackerableName{
             
-                case "stones"?:
+                case "HOUSE3"?:
+                    
                     if lastSceneName != "FutbolistaEucol" {
+                        self.maskViewDelegate.futbolistaMask()
                         manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "FutbolistaEucol"])
                         lastSceneName = "FutbolistaEucol"
                     }
                 break
                 
-                case "chips"?:
+                case "HOUSE"?:
+                    
                     if lastSceneName != "PinguinosEucol" {
+                        self.maskViewDelegate.pinguinosMask()
                         manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "PinguinosEucol"])
                         lastSceneName = "PinguinosEucol"
                     }
                 break
                 
                 default:
+                    self.maskViewDelegate.futbolistaMask()
                 break
             
             }
@@ -166,13 +179,16 @@ extension VuforiaViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDele
 
     fileprivate func createFutbolistaEucolScene(with view: VuforiaEAGLView) -> SCNScene {
         
+
+        
         return SCNScene(named: "FutbolistaEucol.scn")!
     }
     
     fileprivate func createPinguinosEucolScene(with view: VuforiaEAGLView) -> SCNScene {
         
+        
+        return SceneLoader.SceneLoaderManager.pinguinosEucol
        // return SCNScene(named: "PinguinosEucol.scn")!
-        return SCNScene(named: "Test.scn")!
     }
     
     

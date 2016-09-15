@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HyV-V7-KyQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Z4j-HY-WRQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mqh-54-mGn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="t40-sw-s8q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzY-Ml-VvR">
@@ -113,7 +113,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -131,7 +131,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Wuq-Qc-4Y3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8ts-Ef-eYm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="PinguinosEucol.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VuG-aP-ewW"/>
@@ -158,7 +158,7 @@
                         <viewControllerLayoutGuide type="bottom" id="euX-WA-GXk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jIH-gN-nlZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -176,12 +176,16 @@
                         <viewControllerLayoutGuide type="bottom" id="6Da-sM-i5o"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bN2-vr-GoD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDn-vh-G88" userLabel="Vuforia View">
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.16862745100000001" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vidrio" translatesAutoresizingMaskIntoConstraints="NO" id="2OG-n1-eTP">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="xDn-vh-G88" firstAttribute="leading" secondItem="bN2-vr-GoD" secondAttribute="leading" id="15C-ce-Jqi"/>
@@ -197,12 +201,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="maskContainer" destination="2OG-n1-eTP" id="uos-Z7-507"/>
                         <outlet property="vuforiaContainerUIView" destination="xDn-vh-G88" id="HYV-Yg-93t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVh-CU-2tt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2697" y="217"/>
+            <point key="canvasLocation" x="2696.8000000000002" y="216.34182908545728"/>
         </scene>
         <!--Tutorial-->
         <scene sceneID="c8q-8g-quo">
@@ -213,7 +218,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IRk-2e-Ure"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V9g-ma-y7a">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoE-z5-bNH">
@@ -299,7 +304,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FnX-Tj-bY7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="M83-Mq-OFk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PermissionLabel" translatesAutoresizingMaskIntoConstraints="NO" id="geJ-NC-hI5">
@@ -354,7 +359,7 @@
                         <viewControllerLayoutGuide type="bottom" id="YOk-dn-y50"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9qb-wl-s7w">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.30196078430000001" green="0.16862745100000001" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -376,6 +381,7 @@
         <image name="PermissionLabel" width="238" height="16"/>
         <image name="TopBanner" width="414" height="132"/>
         <image name="Tutorial1" width="370" height="467"/>
+        <image name="Vidrio" width="1080" height="1920"/>
         <image name="iPhone6Plus-Video" width="1242" height="2208"/>
         <image name="iphone6Plus-Instrucciones1" width="1242" height="2208"/>
     </resources>

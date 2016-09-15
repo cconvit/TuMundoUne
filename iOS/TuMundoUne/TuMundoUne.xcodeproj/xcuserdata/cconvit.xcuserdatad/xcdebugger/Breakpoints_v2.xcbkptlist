@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TuMundoUne/CameraControlViewController.swift"
-            timestampString = "493960417.219551"
+            timestampString = "495600236.216769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "starVideoRecording(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TuMundoUne/CameraControlViewController.swift"
-            timestampString = "493960417.219551"
+            timestampString = "495600236.216769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
             landmarkName = "stopVideoRecording(_:)"
             landmarkType = "7">
             <Locations>
@@ -42,11 +42,11 @@
                   moduleName = "TuMundoUne"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cconvit/Developer/Betalab/TuMundoUne/iOS/TuMundoUne/TuMundoUne/CameraControlViewController.swift"
-                  timestampString = "495500096.11888"
+                  timestampString = "495600237.357734"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "232"
-                  endingLineNumber = "232"
+                  startingLineNumber = "252"
+                  endingLineNumber = "252"
                   offsetFromSymbolStart = "248">
                </Location>
                <Location
@@ -57,11 +57,11 @@
                   moduleName = "TuMundoUne"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cconvit/Developer/Betalab/TuMundoUne/iOS/TuMundoUne/TuMundoUne/CameraControlViewController.swift"
-                  timestampString = "495500096.122049"
+                  timestampString = "495600237.359637"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "232"
-                  endingLineNumber = "232"
+                  startingLineNumber = "252"
+                  endingLineNumber = "252"
                   offsetFromSymbolStart = "428">
                </Location>
             </Locations>
@@ -73,12 +73,92 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TuMundoUne/CameraControlViewController.swift"
-            timestampString = "493960465.957672"
+            filePath = "TuMundoUne/ViewController.swift"
+            timestampString = "493592768.639303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "deinit"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuMundoUne/ViewController.swift"
+            timestampString = "493852687.843281"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "scene(for:userInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuMundoUne/ViewController.swift"
+            timestampString = "493853745.195251"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "scene(for:userInfo:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TuMundoUne.ViewController.scene (for : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.VuforiaEAGLView&gt;, userInfo : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.SCNScene&gt;"
+                  moduleName = "TuMundoUne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cconvit/Developer/Betalab/TuMundoUne/iOS/TuMundoUne/TuMundoUne/ViewController.swift"
+                  timestampString = "495600237.373474"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TuMundoUne.ViewController.scene (for : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.VuforiaEAGLView&gt;, userInfo : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.SCNScene&gt;"
+                  moduleName = "TuMundoUne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cconvit/Developer/Betalab/TuMundoUne/iOS/TuMundoUne/TuMundoUne/ViewController.swift"
+                  timestampString = "495600237.375411"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "500">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuMundoUne/CameraControlViewController.swift"
+            timestampString = "495600236.216769"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "videoActionDelegate(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TuMundoUne/CameraControlViewController.swift"
-            timestampString = "493960469.169704"
+            timestampString = "495600236.216769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "videoActionDelegate(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,12 +186,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TuMundoUne/CameraControlViewController.swift"
-            timestampString = "493960515.363884"
+            timestampString = "495600236.216769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "videoActionDelegate(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuMundoUne/VuforiaViewController.swift"
+            timestampString = "495600336.372458"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "createFutbolistaEucolScene(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuMundoUne/VuforiaViewController.swift"
+            timestampString = "495600336.372458"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "createPinguinosEucolScene(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuMundoUne/CameraControlViewController.swift"
+            timestampString = "495600236.216769"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "pinguinosMask()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
