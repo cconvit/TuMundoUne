@@ -23,7 +23,8 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
 
     
     @IBOutlet weak var vuforiaContainerUIView: UIView!
-    @IBOutlet weak var maskContainer: UIImageView!
+    @IBOutlet weak var frozenMaskContainer: UIImageView!
+    @IBOutlet weak var futbolMaskContainer: UIImageView!
     
     
     var buttonWindow: UIWindow!
@@ -46,7 +47,8 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
         
         self.addButtonsControllers()
         UIAnimationsViews.showViewWithAlpha(self, container: self.view, child: vuforiaView)
-        self.view.bringSubview(toFront: self.maskContainer)
+        self.view.bringSubview(toFront: self.frozenMaskContainer)
+        self.view.bringSubview(toFront: self.futbolMaskContainer)
         
     }
 
@@ -296,7 +298,8 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     func pinguinosMask(){
         
         DispatchQueue.main.async {
-            self.maskContainer.alpha = 0.5
+            self.frozenMaskContainer.alpha = 1
+            self.futbolMaskContainer.alpha = 0
         }
         
     
@@ -305,7 +308,9 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
     func futbolistaMask(){
         
         DispatchQueue.main.async {
-            self.maskContainer.alpha = 0
+            self.frozenMaskContainer.alpha = 0
+            self.futbolMaskContainer.alpha = 1
+         
         }
         
         

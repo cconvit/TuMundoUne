@@ -102,52 +102,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2167" y="1088"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="Vuforia" id="BYZ-38-t0r" customClass="ViewController" customModule="TuMundoUne" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4772" y="-327"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="b57-6i-bat">
-            <objects>
-                <viewController id="HyV-V7-KyQ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OS8-nJ-G4h"/>
-                        <viewControllerLayoutGuide type="bottom" id="Wuq-Qc-4Y3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8ts-Ef-eYm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="PinguinosEucol.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VuG-aP-ewW"/>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="VuG-aP-ewW" firstAttribute="leading" secondItem="8ts-Ef-eYm" secondAttribute="leading" id="Jge-VU-l1f"/>
-                            <constraint firstAttribute="trailing" secondItem="VuG-aP-ewW" secondAttribute="trailing" id="Q54-aS-mHO"/>
-                            <constraint firstItem="Wuq-Qc-4Y3" firstAttribute="top" secondItem="VuG-aP-ewW" secondAttribute="bottom" id="YsW-QU-nMV"/>
-                            <constraint firstItem="VuG-aP-ewW" firstAttribute="top" secondItem="8ts-Ef-eYm" secondAttribute="top" id="xbn-SO-S0S"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f6L-Lm-VFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4907.2463768115949" y="364.4021739130435"/>
+            <point key="canvasLocation" x="2697" y="952"/>
         </scene>
         <!--Vuforia View-->
         <scene sceneID="R1F-li-mfB">
@@ -182,16 +137,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDn-vh-G88" userLabel="Vuforia View">
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.16862745100000001" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vidrio" translatesAutoresizingMaskIntoConstraints="NO" id="2OG-n1-eTP">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frozen" translatesAutoresizingMaskIntoConstraints="NO" id="2OG-n1-eTP" userLabel="Frozen View"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FutbolMask" translatesAutoresizingMaskIntoConstraints="NO" id="4C2-Nh-c1F" userLabel="Futbol View"/>
                         </subviews>
                         <constraints>
                             <constraint firstItem="xDn-vh-G88" firstAttribute="leading" secondItem="bN2-vr-GoD" secondAttribute="leading" id="15C-ce-Jqi"/>
                             <constraint firstAttribute="trailing" secondItem="xDn-vh-G88" secondAttribute="trailing" id="21J-pE-DgW"/>
+                            <constraint firstItem="2OG-n1-eTP" firstAttribute="top" secondItem="bN2-vr-GoD" secondAttribute="top" id="2tG-sU-syv"/>
                             <constraint firstItem="xDn-vh-G88" firstAttribute="top" secondItem="bN2-vr-GoD" secondAttribute="topMargin" id="Cdc-qU-v8u"/>
+                            <constraint firstItem="6Da-sM-i5o" firstAttribute="top" secondItem="2OG-n1-eTP" secondAttribute="bottom" id="Diq-Rl-tyi"/>
+                            <constraint firstAttribute="trailing" secondItem="4C2-Nh-c1F" secondAttribute="trailing" id="IF8-xR-tIP"/>
+                            <constraint firstItem="4C2-Nh-c1F" firstAttribute="leading" secondItem="bN2-vr-GoD" secondAttribute="leading" id="Wyf-cl-Val"/>
+                            <constraint firstItem="6Da-sM-i5o" firstAttribute="top" secondItem="4C2-Nh-c1F" secondAttribute="bottom" id="auH-YY-Q1a"/>
+                            <constraint firstItem="4C2-Nh-c1F" firstAttribute="top" secondItem="bN2-vr-GoD" secondAttribute="top" id="cqC-WW-T6t"/>
                             <constraint firstItem="6Da-sM-i5o" firstAttribute="top" secondItem="xDn-vh-G88" secondAttribute="bottom" id="ggV-RB-X89"/>
+                            <constraint firstItem="2OG-n1-eTP" firstAttribute="leading" secondItem="bN2-vr-GoD" secondAttribute="leading" id="nK6-2X-Zuo"/>
+                            <constraint firstAttribute="trailing" secondItem="2OG-n1-eTP" secondAttribute="trailing" id="r7M-fl-IJ9"/>
                             <constraint firstItem="6Da-sM-i5o" firstAttribute="top" secondItem="xDn-vh-G88" secondAttribute="bottom" id="tDi-wj-sf3"/>
                         </constraints>
                         <variation key="default">
@@ -201,7 +162,8 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="maskContainer" destination="2OG-n1-eTP" id="uos-Z7-507"/>
+                        <outlet property="frozenMaskContainer" destination="2OG-n1-eTP" id="4KG-47-BrV"/>
+                        <outlet property="futbolMaskContainer" destination="4C2-Nh-c1F" id="MUK-sP-uG9"/>
                         <outlet property="vuforiaContainerUIView" destination="xDn-vh-G88" id="HYV-Yg-93t"/>
                     </connections>
                 </viewController>
@@ -372,6 +334,8 @@
     <resources>
         <image name="BackgroundCameraButton" width="74" height="74"/>
         <image name="Dots1" width="76" height="14"/>
+        <image name="Frozen" width="1080" height="1920"/>
+        <image name="FutbolMask" width="1080" height="1920"/>
         <image name="IconCamera" width="44" height="35"/>
         <image name="IconVideo" width="42" height="41"/>
         <image name="InstruccionesLabel" width="157" height="14"/>
@@ -381,7 +345,6 @@
         <image name="PermissionLabel" width="238" height="16"/>
         <image name="TopBanner" width="414" height="132"/>
         <image name="Tutorial1" width="370" height="467"/>
-        <image name="Vidrio" width="1080" height="1920"/>
         <image name="iPhone6Plus-Video" width="1242" height="2208"/>
         <image name="iphone6Plus-Instrucciones1" width="1242" height="2208"/>
     </resources>

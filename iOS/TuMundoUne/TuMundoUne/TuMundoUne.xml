@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="HOUSE" size="121 177" />
+    <ImageTarget name="IMPRESO_PINGUINO_NETFLIX_ADN_UNE_STRAGE-25-5x8-5cm" size="25.500000 19.841192" />
+    <ImageTarget name="IMPRESO2_PINGUINO_NETFLIX_SOHO_UNE_HOUSE-23x9cm" size="23.000000 14.076763" />
+    <ImageTarget name="IMPRESO_PINGUINO_NETFLIX_PRENSA_UNE_DARE-12-6x34cm" size="12.600000 33.989517" />
+    <ImageTarget name="IMPRESO_PINGUINO_NETFLIX_SEMANA_UNE_STRANGER-20-5x27-5cm" size="20.500000 27.187943" />
+    <ImageTarget name="IMPRESO_PINGUINO_NETFLIX_SOHO_UNE_HOUSE-23x9cm" size="23.000000 9.576571" />
+    <ImageTarget name="IMPRESO_PINGUINO_NETFLIX_VEA_UNE_DARE-26x34-5cm" size="26.000000 34.188206" />
+    <ImageTarget name="PARADERO_FUTBOL_NETFLIX_UNE_HOUSE" size="121.000000 177.003784" />
   </Tracking>
 </QCARConfig>

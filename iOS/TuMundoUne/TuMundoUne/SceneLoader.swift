@@ -10,7 +10,7 @@ import Foundation
 
 class SceneLoader: NSObject{
     
-    
+    /*
     static let SceneLoaderManager = SceneLoader()
 
     var serialQueue:DispatchQueue!
@@ -29,13 +29,12 @@ class SceneLoader: NSObject{
         DispatchQueue.main.async {
             SceneLoader.SceneLoaderManager.pinguinosEucol = SCNScene(named: "PinguinosEucol.scn")
         }
-        /*        SceneLoader.SceneLoaderManager.serialQueue.async {
-            
-           
-
+               SceneLoader.SceneLoaderManager.serialQueue.async {
+     
             SceneLoader.SceneLoaderManager.pinguinosEucol = SCNScene(named: "PinguinosEucol.scn")
             
         }
- */
+
  }
+  */
 }

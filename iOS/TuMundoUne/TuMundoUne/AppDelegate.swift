@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let device = Devices()
         device.get_device_id()
         
-        SceneLoader.loadScenes()
+       // SceneLoader.loadScenes()
         
         return true
     }

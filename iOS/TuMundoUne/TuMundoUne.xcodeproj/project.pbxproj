@@ -8,17 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		790038651D89F49400718202 /* IcebergGrande DF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 790038641D89F49400718202 /* IcebergGrande DF.jpg */; };
-		7900386C1D89FB2A00718202 /* TuMundoUne.dat in Resources */ = {isa = PBXBuildFile; fileRef = 7900386A1D89FB2A00718202 /* TuMundoUne.dat */; };
-		7900386D1D89FB2A00718202 /* TuMundoUne.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7900386B1D89FB2A00718202 /* TuMundoUne.xml */; };
 		792D3D9C1D748B0500F1D759 /* FutbolistaEucol.scn in Resources */ = {isa = PBXBuildFile; fileRef = 792D3D9B1D748B0500F1D759 /* FutbolistaEucol.scn */; };
 		7930BB3A1D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB391D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift */; };
 		7930BB3C1D6C96BD00555A75 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB3B1D6C96BD00555A75 /* Devices.swift */; };
 		7930BB3E1D6C9A4400555A75 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB3D1D6C9A4400555A75 /* UIImageViewExtension.swift */; };
 		7930BB401D6CA20900555A75 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930BB3F1D6CA20900555A75 /* CommonUtils.swift */; };
+		7937024A1D8AF7250049E22B /* PinguinosImpreso.scn in Resources */ = {isa = PBXBuildFile; fileRef = 793702491D8AF7250049E22B /* PinguinosImpreso.scn */; };
 		795EDD101D6FA35B008DCD52 /* body01.png in Resources */ = {isa = PBXBuildFile; fileRef = 795EDD0D1D6FA35B008DCD52 /* body01.png */; };
 		795EDD111D6FA35B008DCD52 /* head01.png in Resources */ = {isa = PBXBuildFile; fileRef = 795EDD0E1D6FA35B008DCD52 /* head01.png */; };
 		795EDD121D6FA35B008DCD52 /* m4tex.png in Resources */ = {isa = PBXBuildFile; fileRef = 795EDD0F1D6FA35B008DCD52 /* m4tex.png */; };
-		795FCF7F1D8A4D0E00E01EE6 /* Test2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 795FCF7E1D8A4D0E00E01EE6 /* Test2.scn */; };
 		7973C4DB1D6F76EB008FFDF5 /* SceneKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7973C4DA1D6F76EB008FFDF5 /* SceneKitExtensions.swift */; };
 		7977F3691D6B34EF00E43C91 /* frame-markers-transparent.zip in Resources */ = {isa = PBXBuildFile; fileRef = 7977F3051D6B34EF00E43C91 /* frame-markers-transparent.zip */; };
 		7977F36A1D6B34EF00E43C91 /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7977F3631D6B34EF00E43C91 /* libVuforia.a */; };
@@ -26,11 +24,6 @@
 		7977F36C1D6B34EF00E43C91 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7977F3661D6B34EF00E43C91 /* readme.txt */; };
 		7977F36D1D6B34EF00E43C91 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7977F3681D6B34EF00E43C91 /* readme.txt */; };
 		7980E10F1D6B38A60030AA55 /* Game.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7980E10E1D6B38A60030AA55 /* Game.scnassets */; };
-		7980E1171D6B39170030AA55 /* IT.png in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1121D6B39170030AA55 /* IT.png */; };
-		7980E1181D6B39170030AA55 /* StonesAndChips.dat in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1131D6B39170030AA55 /* StonesAndChips.dat */; };
-		7980E1191D6B39170030AA55 /* StonesAndChips.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1141D6B39170030AA55 /* StonesAndChips.xml */; };
-		7980E11A1D6B39170030AA55 /* Tarmac.dat in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1151D6B39170030AA55 /* Tarmac.dat */; };
-		7980E11B1D6B39170030AA55 /* Tarmac.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1161D6B39170030AA55 /* Tarmac.xml */; };
 		7980E1211D6B48500030AA55 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1201D6B48500030AA55 /* TutorialViewController.swift */; };
 		7980E1231D6B5F060030AA55 /* CameraPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1221D6B5F060030AA55 /* CameraPermissionViewController.swift */; };
 		7980E1251D6B60A50030AA55 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1241D6B60A50030AA55 /* MainViewController.swift */; };
@@ -40,7 +33,12 @@
 		7980E1311D6B6A900030AA55 /* CameraControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1301D6B6A900030AA55 /* CameraControlViewController.swift */; };
 		7980E1351D6B8EAD0030AA55 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980E1341D6B8EAD0030AA55 /* UIViewExtension.swift */; };
 		79937CCE1D88B23500B3FC49 /* VuforiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79937CCD1D88B23500B3FC49 /* VuforiaViewController.swift */; };
-		79937CD01D88BE3C00B3FC49 /* Test.scn in Resources */ = {isa = PBXBuildFile; fileRef = 79937CCF1D88BE3C00B3FC49 /* Test.scn */; };
+		79C271EB1D8C583100C0D04A /* TuMundoUne.dat in Resources */ = {isa = PBXBuildFile; fileRef = 79C271E91D8C583100C0D04A /* TuMundoUne.dat */; };
+		79C271EC1D8C583100C0D04A /* TuMundoUne.xml in Resources */ = {isa = PBXBuildFile; fileRef = 79C271EA1D8C583100C0D04A /* TuMundoUne.xml */; };
+		79C271EF1D8C5D0B00C0D04A /* TuMundoUne2.dat in Resources */ = {isa = PBXBuildFile; fileRef = 79C271ED1D8C5D0B00C0D04A /* TuMundoUne2.dat */; };
+		79C271F01D8C5D0B00C0D04A /* TuMundoUne2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 79C271EE1D8C5D0B00C0D04A /* TuMundoUne2.xml */; };
+		79C271F31D8C5FF700C0D04A /* TuMundoUne3.dat in Resources */ = {isa = PBXBuildFile; fileRef = 79C271F11D8C5FF700C0D04A /* TuMundoUne3.dat */; };
+		79C271F41D8C5FF700C0D04A /* TuMundoUne3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 79C271F21D8C5FF700C0D04A /* TuMundoUne3.xml */; };
 		79C615A01D6A5D0D007B2D5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6159F1D6A5D0D007B2D5A /* AppDelegate.swift */; };
 		79C615A21D6A5D0D007B2D5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C615A11D6A5D0D007B2D5A /* ViewController.swift */; };
 		79C615A51D6A5D0D007B2D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C615A31D6A5D0D007B2D5A /* Main.storyboard */; };
@@ -68,9 +66,6 @@
 		79C8476B1D749D410038FB20 /* White.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79C847691D749D410038FB20 /* White.jpg */; };
 		79D020861D8A387C008ACB0F /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D020851D8A387C008ACB0F /* UIImageExtension.swift */; };
 		79D020891D8A43C7008ACB0F /* SceneLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D020881D8A43C7008ACB0F /* SceneLoader.swift */; };
-		79D0208D1D8A49E9008ACB0F /* Pinguinos.dae in Resources */ = {isa = PBXBuildFile; fileRef = 79D0208A1D8A49E9008ACB0F /* Pinguinos.dae */; };
-		79D0208E1D8A49E9008ACB0F /* Iceberg.dae in Resources */ = {isa = PBXBuildFile; fileRef = 79D0208B1D8A49E9008ACB0F /* Iceberg.dae */; };
-		79D0208F1D8A49E9008ACB0F /* Futbolista.dae in Resources */ = {isa = PBXBuildFile; fileRef = 79D0208C1D8A49E9008ACB0F /* Futbolista.dae */; };
 		79F77F421D777A0D0023B430 /* PinguinosEucol.scn in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F411D777A0D0023B430 /* PinguinosEucol.scn */; };
 		79F77F491D777A5F0023B430 /* Penguin_Bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F471D777A5F0023B430 /* Penguin_Bump.jpg */; };
 		79F77F4A1D777A5F0023B430 /* Penguin-DF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F481D777A5F0023B430 /* Penguin-DF.jpg */; };
@@ -82,17 +77,15 @@
 
 /* Begin PBXFileReference section */
 		790038641D89F49400718202 /* IcebergGrande DF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IcebergGrande DF.jpg"; sourceTree = "<group>"; };
-		7900386A1D89FB2A00718202 /* TuMundoUne.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = TuMundoUne.dat; sourceTree = "<group>"; };
-		7900386B1D89FB2A00718202 /* TuMundoUne.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TuMundoUne.xml; sourceTree = "<group>"; };
 		792D3D9B1D748B0500F1D759 /* FutbolistaEucol.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = FutbolistaEucol.scn; sourceTree = "<group>"; };
 		7930BB391D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamaraButtonsControlViewController.swift; sourceTree = "<group>"; };
 		7930BB3B1D6C96BD00555A75 /* Devices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
 		7930BB3D1D6C9A4400555A75 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		7930BB3F1D6CA20900555A75 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		793702491D8AF7250049E22B /* PinguinosImpreso.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PinguinosImpreso.scn; sourceTree = "<group>"; };
 		795EDD0D1D6FA35B008DCD52 /* body01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body01.png; sourceTree = "<group>"; };
 		795EDD0E1D6FA35B008DCD52 /* head01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head01.png; sourceTree = "<group>"; };
 		795EDD0F1D6FA35B008DCD52 /* m4tex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m4tex.png; sourceTree = "<group>"; };
-		795FCF7E1D8A4D0E00E01EE6 /* Test2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Test2.scn; sourceTree = "<group>"; };
 		7973C4DA1D6F76EB008FFDF5 /* SceneKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitExtensions.swift; sourceTree = "<group>"; };
 		7977F3051D6B34EF00E43C91 /* frame-markers-transparent.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "frame-markers-transparent.zip"; sourceTree = "<group>"; };
 		7977F3091D6B34EF00E43C91 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
@@ -188,11 +181,6 @@
 		7977F3661D6B34EF00E43C91 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		7977F3681D6B34EF00E43C91 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		7980E10E1D6B38A60030AA55 /* Game.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Game.scnassets; sourceTree = "<group>"; };
-		7980E1121D6B39170030AA55 /* IT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IT.png; sourceTree = "<group>"; };
-		7980E1131D6B39170030AA55 /* StonesAndChips.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = StonesAndChips.dat; sourceTree = "<group>"; };
-		7980E1141D6B39170030AA55 /* StonesAndChips.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StonesAndChips.xml; sourceTree = "<group>"; };
-		7980E1151D6B39170030AA55 /* Tarmac.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tarmac.dat; sourceTree = "<group>"; };
-		7980E1161D6B39170030AA55 /* Tarmac.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tarmac.xml; sourceTree = "<group>"; };
 		7980E1201D6B48500030AA55 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		7980E1221D6B5F060030AA55 /* CameraPermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPermissionViewController.swift; sourceTree = "<group>"; };
 		7980E1241D6B60A50030AA55 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -202,7 +190,12 @@
 		7980E1301D6B6A900030AA55 /* CameraControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraControlViewController.swift; sourceTree = "<group>"; };
 		7980E1341D6B8EAD0030AA55 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		79937CCD1D88B23500B3FC49 /* VuforiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VuforiaViewController.swift; sourceTree = "<group>"; };
-		79937CCF1D88BE3C00B3FC49 /* Test.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Test.scn; sourceTree = "<group>"; };
+		79C271E91D8C583100C0D04A /* TuMundoUne.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = TuMundoUne.dat; sourceTree = "<group>"; };
+		79C271EA1D8C583100C0D04A /* TuMundoUne.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TuMundoUne.xml; sourceTree = "<group>"; };
+		79C271ED1D8C5D0B00C0D04A /* TuMundoUne2.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = TuMundoUne2.dat; sourceTree = "<group>"; };
+		79C271EE1D8C5D0B00C0D04A /* TuMundoUne2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TuMundoUne2.xml; sourceTree = "<group>"; };
+		79C271F11D8C5FF700C0D04A /* TuMundoUne3.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = TuMundoUne3.dat; sourceTree = "<group>"; };
+		79C271F21D8C5FF700C0D04A /* TuMundoUne3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TuMundoUne3.xml; sourceTree = "<group>"; };
 		79C6159C1D6A5D0D007B2D5A /* TuMundoUne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuMundoUne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C6159F1D6A5D0D007B2D5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C615A11D6A5D0D007B2D5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -286,8 +279,7 @@
 			children = (
 				792D3D9B1D748B0500F1D759 /* FutbolistaEucol.scn */,
 				79F77F411D777A0D0023B430 /* PinguinosEucol.scn */,
-				79937CCF1D88BE3C00B3FC49 /* Test.scn */,
-				795FCF7E1D8A4D0E00E01EE6 /* Test2.scn */,
+				793702491D8AF7250049E22B /* PinguinosImpreso.scn */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -484,13 +476,12 @@
 		7980E1111D6B39060030AA55 /* ImageTargets */ = {
 			isa = PBXGroup;
 			children = (
-				7900386A1D89FB2A00718202 /* TuMundoUne.dat */,
-				7900386B1D89FB2A00718202 /* TuMundoUne.xml */,
-				7980E1121D6B39170030AA55 /* IT.png */,
-				7980E1131D6B39170030AA55 /* StonesAndChips.dat */,
-				7980E1141D6B39170030AA55 /* StonesAndChips.xml */,
-				7980E1151D6B39170030AA55 /* Tarmac.dat */,
-				7980E1161D6B39170030AA55 /* Tarmac.xml */,
+				79C271F11D8C5FF700C0D04A /* TuMundoUne3.dat */,
+				79C271F21D8C5FF700C0D04A /* TuMundoUne3.xml */,
+				79C271ED1D8C5D0B00C0D04A /* TuMundoUne2.dat */,
+				79C271EE1D8C5D0B00C0D04A /* TuMundoUne2.xml */,
+				79C271E91D8C583100C0D04A /* TuMundoUne.dat */,
+				79C271EA1D8C583100C0D04A /* TuMundoUne.xml */,
 			);
 			name = ImageTargets;
 			sourceTree = "<group>";
@@ -741,7 +732,7 @@
 				TargetAttributes = {
 					79C6159B1D6A5D0C007B2D5A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = Z6527UXGCG;
+						DevelopmentTeam = UBNXPV6C4Q;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -769,44 +760,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D0208D1D8A49E9008ACB0F /* Pinguinos.dae in Resources */,
-				79D0208E1D8A49E9008ACB0F /* Iceberg.dae in Resources */,
-				79D0208F1D8A49E9008ACB0F /* Futbolista.dae in Resources */,
 				79C847641D749CC10038FB20 /* Futbolista Piel-NM.jpg in Resources */,
-				7900386C1D89FB2A00718202 /* TuMundoUne.dat in Resources */,
 				795EDD111D6FA35B008DCD52 /* head01.png in Resources */,
 				79C847631D749CC10038FB20 /* Cuerpo-NM.jpg in Resources */,
+				79C271F31D8C5FF700C0D04A /* TuMundoUne3.dat in Resources */,
 				7977F36C1D6B34EF00E43C91 /* readme.txt in Resources */,
-				7980E11A1D6B39170030AA55 /* Tarmac.dat in Resources */,
+				7937024A1D8AF7250049E22B /* PinguinosImpreso.scn in Resources */,
 				79C847621D749CC10038FB20 /* Cuerpo-DF.jpg in Resources */,
 				79F77F501D777A690023B430 /* Iceberg-NM.tif in Resources */,
+				79C271EC1D8C583100C0D04A /* TuMundoUne.xml in Resources */,
 				79C847671D749CF70038FB20 /* Ojo.jpg in Resources */,
 				79C615AA1D6A5D0D007B2D5A /* LaunchScreen.storyboard in Resources */,
 				795EDD121D6FA35B008DCD52 /* m4tex.png in Resources */,
 				79C8476B1D749D410038FB20 /* White.jpg in Resources */,
 				79F77F491D777A5F0023B430 /* Penguin_Bump.jpg in Resources */,
-				7980E1171D6B39170030AA55 /* IT.png in Resources */,
 				79F77F4A1D777A5F0023B430 /* Penguin-DF.jpg in Resources */,
 				795EDD101D6FA35B008DCD52 /* body01.png in Resources */,
 				79F77F511D777A690023B430 /* IcebergPequeno-DF.tif in Resources */,
 				79C615A71D6A5D0D007B2D5A /* Assets.xcassets in Resources */,
 				7977F3691D6B34EF00E43C91 /* frame-markers-transparent.zip in Resources */,
 				79C847651D749CC10038FB20 /* Futbolista_Piel.png in Resources */,
-				7980E1181D6B39170030AA55 /* StonesAndChips.dat in Resources */,
 				79C8476A1D749D410038FB20 /* Black.jpg in Resources */,
+				79C271F01D8C5D0B00C0D04A /* TuMundoUne2.xml in Resources */,
+				79C271EF1D8C5D0B00C0D04A /* TuMundoUne2.dat in Resources */,
 				7980E10F1D6B38A60030AA55 /* Game.scnassets in Resources */,
-				7980E11B1D6B39170030AA55 /* Tarmac.xml in Resources */,
-				795FCF7F1D8A4D0E00E01EE6 /* Test2.scn in Resources */,
-				7980E1191D6B39170030AA55 /* StonesAndChips.xml in Resources */,
 				79F77F521D777A690023B430 /* IcebergPequeno-NM.tif in Resources */,
 				79F77F421D777A0D0023B430 /* PinguinosEucol.scn in Resources */,
-				7900386D1D89FB2A00718202 /* TuMundoUne.xml in Resources */,
-				79937CD01D88BE3C00B3FC49 /* Test.scn in Resources */,
 				79F77F4F1D777A690023B430 /* Iceberg-DF.tif in Resources */,
+				79C271F41D8C5FF700C0D04A /* TuMundoUne3.xml in Resources */,
 				792D3D9C1D748B0500F1D759 /* FutbolistaEucol.scn in Resources */,
 				7977F36D1D6B34EF00E43C91 /* readme.txt in Resources */,
 				79C615A51D6A5D0D007B2D5A /* Main.storyboard in Resources */,
 				7977F36B1D6B34EF00E43C91 /* license_3rdpartynotice.txt in Resources */,
+				79C271EB1D8C583100C0D04A /* TuMundoUne.dat in Resources */,
 				790038651D89F49400718202 /* IcebergGrande DF.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -961,6 +947,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = UBNXPV6C4Q;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/TuMundoUne/vuforia-sdk-ios-6-0-112/build/include",
@@ -988,6 +975,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = UBNXPV6C4Q;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/TuMundoUne/vuforia-sdk-ios-6-0-112/build/include",

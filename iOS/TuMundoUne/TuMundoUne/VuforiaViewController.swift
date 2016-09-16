@@ -123,22 +123,28 @@ extension VuforiaViewController: VuforiaManagerDelegate {
             
             switch trackerableName{
             
-                case "HOUSE3"?:
-                    
-                    if lastSceneName != "FutbolistaEucol" {
-                        self.maskViewDelegate.futbolistaMask()
-                        manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "FutbolistaEucol"])
-                        lastSceneName = "FutbolistaEucol"
-                    }
+                case "IMPRESO_PINGUINO_NETFLIX_ADN_UNE_STRAGE-25-5x8-5cm"?:
+                    setSceneContent(manager,sceneName: "PinguinosImpreso")
                 break
                 
-                case "HOUSE"?:
-                    
-                    if lastSceneName != "PinguinosEucol" {
-                        self.maskViewDelegate.pinguinosMask()
-                        manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "PinguinosEucol"])
-                        lastSceneName = "PinguinosEucol"
-                    }
+                case "IMPRESO_PINGUINO_NETFLIX_PRENSA_UNE_DARE-12-6x34cm"?:
+                    setSceneContent(manager,sceneName: "PinguinosImpreso")
+                break
+                
+                case "IMPRESO_PINGUINO_NETFLIX_SEMANA_UNE_STRANGER-20-5x27-5cm"?:
+                    setSceneContent(manager,sceneName: "PinguinosImpreso")
+                break
+                
+                case "IMPRESO_PINGUINO_NETFLIX_SOHO_UNE_HOUSE-23x9cm"?:
+                    setSceneContent(manager,sceneName: "PinguinosImpreso")
+                break
+                
+                case "IMPRESO_PINGUINO_NETFLIX_VEA_UNE_DARE-26x34-5cm"?:
+                    setSceneContent(manager,sceneName: "PinguinosImpreso")
+                break
+                
+                case "PARADERO_FUTBOL_NETFLIX_UNE_HOUSE"?:
+                    setSceneContent(manager,sceneName: "FutbolistaEucol")
                 break
                 
                 default:
@@ -148,6 +154,32 @@ extension VuforiaViewController: VuforiaManagerDelegate {
             }
             
         }
+    }
+    
+    func setSceneContent(_ manager: VuforiaManager!,sceneName:String){
+        
+        if lastSceneName != sceneName{
+            
+            switch sceneName{
+                
+                case "PinguinosImpreso":
+                    self.maskViewDelegate.pinguinosMask()
+                break
+                
+                case "FutbolistaEucol":
+                    self.maskViewDelegate.futbolistaMask()
+                break
+                
+                default:
+                break
+            }
+            
+            
+            manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : sceneName])
+            lastSceneName = sceneName
+            
+        }
+        
     }
 }
 
@@ -166,8 +198,8 @@ extension VuforiaViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDele
             case "FutbolistaEucol"?:
                 return createFutbolistaEucolScene(with: view)
             
-            case "PinguinosEucol"?:
-                return createPinguinosEucolScene(with: view)
+            case "PinguinosImpreso"?:
+                return createPinguinosImpresoScene(with: view)
             
             default:
                 return createFutbolistaEucolScene(with: view)
@@ -187,8 +219,15 @@ extension VuforiaViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDele
     fileprivate func createPinguinosEucolScene(with view: VuforiaEAGLView) -> SCNScene {
         
         
-        return SceneLoader.SceneLoaderManager.pinguinosEucol
-       // return SCNScene(named: "PinguinosEucol.scn")!
+        //return SceneLoader.SceneLoaderManager.pinguinosEucol
+       return SCNScene(named: "PinguinosEucol.scn")!
+    }
+    
+    fileprivate func createPinguinosImpresoScene(with view: VuforiaEAGLView) -> SCNScene {
+        
+        
+        //return SceneLoader.SceneLoaderManager.pinguinosEucol
+        return SCNScene(named: "PinguinosImpreso.scn")!
     }
     
     

@@ -21,9 +21,13 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Para vivir una experiencia única</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Para guardar las fotos que tomes</string>
 	<key>SCNDisableLinearSpaceRendering</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
