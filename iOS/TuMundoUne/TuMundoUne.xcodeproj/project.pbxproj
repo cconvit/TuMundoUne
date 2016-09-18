@@ -66,6 +66,9 @@
 		79C8476B1D749D410038FB20 /* White.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79C847691D749D410038FB20 /* White.jpg */; };
 		79D020861D8A387C008ACB0F /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D020851D8A387C008ACB0F /* UIImageExtension.swift */; };
 		79D020891D8A43C7008ACB0F /* SceneLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D020881D8A43C7008ACB0F /* SceneLoader.swift */; };
+		79E2920F1D8CA46C005BF2FA /* SoundsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2920E1D8CA46C005BF2FA /* SoundsEffects.swift */; };
+		79E292131D8CA59C005BF2FA /* Crowd.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79E292111D8CA59C005BF2FA /* Crowd.mp3 */; };
+		79E292141D8CA59C005BF2FA /* Wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79E292121D8CA59C005BF2FA /* Wind.mp3 */; };
 		79F77F421D777A0D0023B430 /* PinguinosEucol.scn in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F411D777A0D0023B430 /* PinguinosEucol.scn */; };
 		79F77F491D777A5F0023B430 /* Penguin_Bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F471D777A5F0023B430 /* Penguin_Bump.jpg */; };
 		79F77F4A1D777A5F0023B430 /* Penguin-DF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79F77F481D777A5F0023B430 /* Penguin-DF.jpg */; };
@@ -234,6 +237,9 @@
 		79D0208A1D8A49E9008ACB0F /* Pinguinos.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; name = Pinguinos.dae; path = TuMundoUne/Game.scnassets/Pinguinos.dae; sourceTree = "<group>"; };
 		79D0208B1D8A49E9008ACB0F /* Iceberg.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; name = Iceberg.dae; path = TuMundoUne/Game.scnassets/Iceberg.dae; sourceTree = "<group>"; };
 		79D0208C1D8A49E9008ACB0F /* Futbolista.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; name = Futbolista.dae; path = TuMundoUne/Game.scnassets/Futbolista.dae; sourceTree = "<group>"; };
+		79E2920E1D8CA46C005BF2FA /* SoundsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsEffects.swift; sourceTree = "<group>"; };
+		79E292111D8CA59C005BF2FA /* Crowd.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Crowd.mp3; sourceTree = "<group>"; };
+		79E292121D8CA59C005BF2FA /* Wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wind.mp3; sourceTree = "<group>"; };
 		79F77F411D777A0D0023B430 /* PinguinosEucol.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PinguinosEucol.scn; sourceTree = "<group>"; };
 		79F77F471D777A5F0023B430 /* Penguin_Bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Penguin_Bump.jpg; sourceTree = "<group>"; };
 		79F77F481D777A5F0023B430 /* Penguin-DF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Penguin-DF.jpg"; sourceTree = "<group>"; };
@@ -267,6 +273,7 @@
 		7930BB411D6CACAC00555A75 /* Scene Resources */ = {
 			isa = PBXGroup;
 			children = (
+				79E292101D8CA585005BF2FA /* Sounds */,
 				79C8475D1D749C960038FB20 /* Textures */,
 				7930BB421D6CACF600555A75 /* Scenes */,
 				7930BB431D6CACFE00555A75 /* 3D Models */,
@@ -653,8 +660,18 @@
 			isa = PBXGroup;
 			children = (
 				79D020881D8A43C7008ACB0F /* SceneLoader.swift */,
+				79E2920E1D8CA46C005BF2FA /* SoundsEffects.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		79E292101D8CA585005BF2FA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				79E292111D8CA59C005BF2FA /* Crowd.mp3 */,
+				79E292121D8CA59C005BF2FA /* Wind.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 		79F77F431D777A300023B430 /* Futbolista */ = {
@@ -760,6 +777,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E292141D8CA59C005BF2FA /* Wind.mp3 in Resources */,
 				79C847641D749CC10038FB20 /* Futbolista Piel-NM.jpg in Resources */,
 				795EDD111D6FA35B008DCD52 /* head01.png in Resources */,
 				79C847631D749CC10038FB20 /* Cuerpo-NM.jpg in Resources */,
@@ -767,6 +785,7 @@
 				7977F36C1D6B34EF00E43C91 /* readme.txt in Resources */,
 				7937024A1D8AF7250049E22B /* PinguinosImpreso.scn in Resources */,
 				79C847621D749CC10038FB20 /* Cuerpo-DF.jpg in Resources */,
+				79E292131D8CA59C005BF2FA /* Crowd.mp3 in Resources */,
 				79F77F501D777A690023B430 /* Iceberg-NM.tif in Resources */,
 				79C271EC1D8C583100C0D04A /* TuMundoUne.xml in Resources */,
 				79C847671D749CF70038FB20 /* Ojo.jpg in Resources */,
@@ -825,6 +844,7 @@
 				79C6164F1D6A7DAE007B2D5A /* VuforiaEAGLView.mm in Sources */,
 				7930BB3A1D6BB1CB00555A75 /* CamaraButtonsControlViewController.swift in Sources */,
 				7930BB401D6CA20900555A75 /* CommonUtils.swift in Sources */,
+				79E2920F1D8CA46C005BF2FA /* SoundsEffects.swift in Sources */,
 				7980E12F1D6B65160030AA55 /* SwipeLeftSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

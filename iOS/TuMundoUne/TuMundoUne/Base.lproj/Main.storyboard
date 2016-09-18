@@ -138,7 +138,7 @@
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.16862745100000001" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frozen" translatesAutoresizingMaskIntoConstraints="NO" id="2OG-n1-eTP" userLabel="Frozen View"/>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FutbolMask" translatesAutoresizingMaskIntoConstraints="NO" id="4C2-Nh-c1F" userLabel="Futbol View"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FutbolMask2" translatesAutoresizingMaskIntoConstraints="NO" id="4C2-Nh-c1F" userLabel="Futbol View"/>
                         </subviews>
                         <constraints>
                             <constraint firstItem="xDn-vh-G88" firstAttribute="leading" secondItem="bN2-vr-GoD" secondAttribute="leading" id="15C-ce-Jqi"/>
@@ -170,6 +170,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVh-CU-2tt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2696.8000000000002" y="216.34182908545728"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O9I-fc-VPJ">
+            <objects>
+                <viewController id="7h6-C7-k5m" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZkG-uI-5de"/>
+                        <viewControllerLayoutGuide type="bottom" id="fRz-sw-IgL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kU7-J6-edI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="PinguinosImpreso.scn" translatesAutoresizingMaskIntoConstraints="NO" id="vDS-mG-aiv"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fRz-sw-IgL" firstAttribute="top" secondItem="vDS-mG-aiv" secondAttribute="bottom" id="K2t-UT-tWi"/>
+                            <constraint firstItem="vDS-mG-aiv" firstAttribute="top" secondItem="kU7-J6-edI" secondAttribute="top" id="Qdx-ew-78A"/>
+                            <constraint firstItem="vDS-mG-aiv" firstAttribute="leading" secondItem="kU7-J6-edI" secondAttribute="leading" id="SLH-za-16d"/>
+                            <constraint firstAttribute="trailing" secondItem="vDS-mG-aiv" secondAttribute="trailing" id="ZNL-Gn-EdO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sv-Om-5fV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.79999999999995" y="-428.63568215892059"/>
         </scene>
         <!--Tutorial-->
         <scene sceneID="c8q-8g-quo">
@@ -335,7 +362,7 @@
         <image name="BackgroundCameraButton" width="74" height="74"/>
         <image name="Dots1" width="76" height="14"/>
         <image name="Frozen" width="1080" height="1920"/>
-        <image name="FutbolMask" width="1080" height="1920"/>
+        <image name="FutbolMask2" width="1080" height="1920"/>
         <image name="IconCamera" width="44" height="35"/>
         <image name="IconVideo" width="42" height="41"/>
         <image name="InstruccionesLabel" width="157" height="14"/>

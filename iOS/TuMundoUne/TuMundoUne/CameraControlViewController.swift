@@ -17,6 +17,7 @@ protocol CameraButtonControllersDelegate {
 protocol MaskViewDelegate {
     func pinguinosMask()
     func futbolistaMask()
+    func removeMasks()
 }
 
 class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPPreviewViewControllerDelegate,CameraButtonControllersDelegate,MaskViewDelegate{
@@ -311,6 +312,17 @@ class CameraControlViewController: UIViewController,RPScreenRecorderDelegate,RPP
             self.frozenMaskContainer.alpha = 0
             self.futbolMaskContainer.alpha = 1
          
+        }
+        
+        
+    }
+    
+    func removeMasks(){
+        
+        DispatchQueue.main.async {
+            self.frozenMaskContainer.alpha = 0
+            self.futbolMaskContainer.alpha = 0
+            
         }
         
         

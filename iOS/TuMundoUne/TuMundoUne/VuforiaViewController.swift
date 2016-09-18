@@ -108,6 +108,7 @@ extension VuforiaViewController: VuforiaManagerDelegate {
         do {
             try vuforiaManager?.start()
             vuforiaManager?.setContinuousAutofocusEnabled(true)
+        
         }catch let error {
             print("\(error)")
         }
@@ -115,6 +116,12 @@ extension VuforiaViewController: VuforiaManagerDelegate {
     
     
     func vuforiaManager(_ manager: VuforiaManager!, didUpdateWith state: VuforiaState!) {
+        
+        if state.numberOfTrackableResults == 0{
+        
+            self.maskViewDelegate.removeMasks()
+            SoundsEffects.stopAll()
+        }
         
         for index in 0 ..< state.numberOfTrackableResults {
             let result = state.trackableResult(at: index)
@@ -148,6 +155,7 @@ extension VuforiaViewController: VuforiaManagerDelegate {
                 break
                 
                 default:
+                    print("vacio")
                     self.maskViewDelegate.futbolistaMask()
                 break
             
@@ -158,22 +166,23 @@ extension VuforiaViewController: VuforiaManagerDelegate {
     
     func setSceneContent(_ manager: VuforiaManager!,sceneName:String){
         
+        switch sceneName{
+            
+        case "PinguinosImpreso":
+            SoundsEffects.playPinguinos()
+            self.maskViewDelegate.pinguinosMask()
+            break
+            
+        case "FutbolistaEucol":
+            SoundsEffects.playFutbolista()
+            self.maskViewDelegate.futbolistaMask()
+            break
+            
+        default:
+            break
+        }
+        
         if lastSceneName != sceneName{
-            
-            switch sceneName{
-                
-                case "PinguinosImpreso":
-                    self.maskViewDelegate.pinguinosMask()
-                break
-                
-                case "FutbolistaEucol":
-                    self.maskViewDelegate.futbolistaMask()
-                break
-                
-                default:
-                break
-            }
-            
             
             manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : sceneName])
             lastSceneName = sceneName
@@ -225,7 +234,7 @@ extension VuforiaViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDele
     
     fileprivate func createPinguinosImpresoScene(with view: VuforiaEAGLView) -> SCNScene {
         
-        
+     
         //return SceneLoader.SceneLoaderManager.pinguinosEucol
         return SCNScene(named: "PinguinosImpreso.scn")!
     }
